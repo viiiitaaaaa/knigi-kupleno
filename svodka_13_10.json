@@ -1,0 +1,257 @@
+[
+ {
+  "slug": "co_intelligence",
+  "file": "Co-Intelligence Living and Working with AI (Mollick, Ethan).pdf",
+  "units": 226,
+  "words": 58813,
+  "lines": 6621
+ },
+ {
+  "slug": "storytelling_data_makeovers",
+  "file": "Storytelling with Data Before and After - Practical Makeovers for Powerful Data Stories (Cole Nussbaumer Knaflic, Mike C.pdf",
+  "units": 432,
+  "words": 73233,
+  "lines": 9621
+ },
+ {
+  "slug": "mom_test",
+  "file": "The Mom Test how to talk to customers and learn if your business is a good idea when everybody is lying to you (Rob Fitz.pdf",
+  "units": 122,
+  "words": 31536,
+  "lines": 3509
+ },
+ {
+  "slug": "design_how_people_think",
+  "file": "Design for how People Think (John Whalen).pdf",
+  "units": 238,
+  "words": 61691,
+  "lines": 7054
+ },
+ {
+  "slug": "agentic_design_patterns",
+  "file": "Agentic Design Patterns A Hands-On Guide to Building Intelligent Systems(github) (Antonio Gulli) (z-library.sk, 1lib.sk,.pdf",
+  "units": 482,
+  "words": 119757,
+  "lines": 17214
+ },
+ {
+  "slug": "minto_pyramid",
+  "file": "The Minto Pyramid Principle Logic in Writing, Thinking, Problem Solving (Barbara Minto) (z-library.sk, 1lib.sk, z-lib.s.pdf",
+  "units": 275,
+  "words": 87809,
+  "lines": 14804
+ },
+ {
+  "slug": "rag_python_cookbook",
+  "file": "RAG with Python Cookbook Practical Recipes from Data Preprocessing to LLM Agents (Dominik Polzer) (z-library.sk, 1lib.sk.pdf",
+  "units": 378,
+  "words": 81634,
+  "lines": 13462
+ },
+ {
+  "slug": "mastering_openvpn",
+  "file": "Mastering OpenVPN (Eric F Crist, Jan Just Keijser).pdf",
+  "units": 364,
+  "words": 80822,
+  "lines": 12651
+ },
+ {
+  "slug": "loop_engineering_playbook",
+  "file": "The 0→1 Loop Engineering Playbook (2026 Edition) An AI Agent Engineering System for Building Production-Ready Agents wit.pdf",
+  "units": 335,
+  "words": 57839,
+  "lines": 12474
+ },
+ {
+  "slug": "build_ai_agent",
+  "file": "Build an AI Agent Agents that reason, plan, and act autonomously (From Scratch) (Jungjun Hur, Younghee Song) (z-library..pdf",
+  "units": 336,
+  "words": 97907,
+  "lines": 16410
+ },
+ {
+  "slug": "rag_production",
+  "file": "Hands-On RAG for Production Design, Develop, and Deploy Production-Ready RAG Applications (Ofer Mendelevitch, Forrest Sh.pdf",
+  "units": 359,
+  "words": 115832,
+  "lines": 15258
+ },
+ {
+  "slug": "pitch_anything",
+  "file": "PITCH ANYTHING An Innovative Method for PRESENTING, PERSUADING, AND WINNING THE DEAL (Oren Klaff) (z-library.sk, 1lib.sk.epub",
+  "units": 17,
+  "words": 65087,
+  "lines": 3891
+ },
+ {
+  "slug": "prediction_machines",
+  "file": "Prediction Machines, Updated and Expanded The Simple Economics of Artificial Intelligence (Ajay Agrawal, Joshua Gans, Av.epub",
+  "units": 36,
+  "words": 82985,
+  "lines": 5106
+ },
+ {
+  "slug": "obviously_awesome",
+  "file": "Obviously Awesome (April Dunford).epub",
+  "units": 19,
+  "words": 32342,
+  "missing": [
+   "EPUB/Text/cover.xhtml",
+   "EPUB/Text/halftitlepage.xhtml",
+   "EPUB/Text/titlepage.xhtml",
+   "EPUB/Text/copyright.xhtml",
+   "EPUB/Text/toc.xhtml",
+   "EPUB/Text/quote.xhtml",
+   "EPUB/Text/part1.xhtml",
+   "EPUB/Text/part2.xhtml",
+   "EPUB/Text/part3.xhtml"
+  ]
+ },
+ {
+  "slug": "openvpn_cookbook",
+  "file": "OpenVPN Cookbook - Second Edition - Keijser, Jan Just.epub",
+  "units": 130,
+  "words": 74672,
+  "missing": []
+ },
+ {
+  "slug": "million_dollar_consulting",
+  "file": "Million Dollar Consulting (Alan Weiss, 2016).epub",
+  "units": 27,
+  "words": 75063,
+  "missing": []
+ },
+ {
+  "slug": "challenger_sale",
+  "file": "The Challenger Sale (Matthew Dixon, Brent Adamson).pdf",
+  "units": 310,
+  "words": 68882
+ },
+ {
+  "slug": "show_your_work",
+  "file": "Show Your Work (Austin Kleon, 2014).pdf",
+  "units": 132,
+  "words": 17922
+ },
+ {
+  "slug": "spin_fieldbook",
+  "file": "The SPIN Selling Fieldbook (Neil Rackham).pdf",
+  "units": 269,
+  "words": 49263
+ },
+ {
+  "slug": "introducing_nlp",
+  "file": "Introducing_NLP_-_Joseph_OConnor.pdf",
+  "units": 284,
+  "words": 87666
+ },
+ {
+  "slug": "sleight_of_mouth",
+  "file": "Sleight_of_Mouth_-_Robert_Dilts.pdf",
+  "units": 318,
+  "words": 79504
+ },
+ {
+  "slug": "changing_belief_systems",
+  "file": "Changing_Belief_Systems_With_NLP_-_Robert_Dilts.pdf",
+  "units": 200,
+  "words": 56881
+ },
+ {
+  "slug": "using_your_brain",
+  "file": "Using_Your_Brain--For_a_Change_-_Richard_Bandler.pdf",
+  "units": 179,
+  "words": 57858
+ },
+ {
+  "slug": "take_charge_bandler",
+  "file": "How_to_Take_Charge_of_Your_Life_The_Users_Guide_to_NLP_-_Richard_Bandler.pdf",
+  "units": 129,
+  "words": 34440
+ },
+ {
+  "slug": "never_split_difference",
+  "file": "Never_Split_the_Difference__Negotiating_as_-_Chris_Voss.pdf",
+  "units": 232,
+  "words": 82938
+ },
+ {
+  "slug": "ask_for_it",
+  "file": "Ask_For_It_How_Women_Can_Use_the_Power_of_Negotiation_to_Get_What_They_Really_Want_-_Linda_Babcock.pdf",
+  "units": 344,
+  "words": 97627
+ },
+ {
+  "slug": "playing_big",
+  "file": "Playing_Big_-_Tara_Mohr.pdf",
+  "units": 223,
+  "words": 77913
+ },
+ {
+  "slug": "a_mind_for_numbers",
+  "file": "A_Mind_For_Numbers_-_Barbara_Oakley.pdf",
+  "units": 279,
+  "words": 84649
+ },
+ {
+  "slug": "ultralearning",
+  "file": "Ultralearning_-_Scott_Young.pdf",
+  "units": 251,
+  "words": 81289
+ },
+ {
+  "slug": "make_it_stick",
+  "file": "Make_It_Stick_-_Peter_C_Brown_Henry_L_Roediger_III.pdf",
+  "units": 321,
+  "words": 92202
+ },
+ {
+  "slug": "peak_ericsson",
+  "file": "Peak__Secrets_from_the_New_Science_of_Expe_-_Anders_Ericsson.pdf",
+  "units": 316,
+  "words": 111588
+ },
+ {
+  "slug": "moonwalking_einstein",
+  "file": "Moonwalking_With_Einstein__The_Art_and_Sci_-_Joshua_Foer.pdf",
+  "units": 283,
+  "words": 95372
+ },
+ {
+  "slug": "second_brain",
+  "file": "Building_a_Second_Brain_A_Proven_Method_to_Organize_Your_Digital_Life_and_Unlock_Your_Creative_Potential_-_Tiago_Forte.pdf",
+  "units": 247,
+  "words": 70066
+ },
+ {
+  "slug": "fluent_forever",
+  "file": "Fluent_Forever_-_Gabriel_Wyner.pdf",
+  "units": 334,
+  "words": 88078
+ },
+ {
+  "slug": "prodazhi_b2b_kolotilov",
+  "file": "Продажи B2B 101+ кейс (Евгений Колотилов).pdf",
+  "units": 104,
+  "words": 31860
+ },
+ {
+  "slug": "lean_analytics",
+  "file": "Lean Analytics Use Data to Build a Better Startup Faster (Alistair Croll, Benjamin Yoskovitz).pdf",
+  "units": 439,
+  "words": 126641
+ },
+ {
+  "slug": "ai_engineering",
+  "file": "AI_Engineering_Building_Applications_-_Chip_Huyen.pdf",
+  "units": 991,
+  "words": 173762
+ },
+ {
+  "slug": "resilient_distributed",
+  "file": "Building Resilient Distributed Systems (Sam Newman).epub",
+  "units": 30,
+  "words": 131106,
+  "missing": 0
+ }
+]

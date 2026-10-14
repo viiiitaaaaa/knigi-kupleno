@@ -1,0 +1,383 @@
+<title>Полный цикл: автозапчасти</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Деловая записка: узкая колонка текста, широкая таблица веток, этапы списком. Цвета сайта: беж/серый, бордо, глубокий синий. */
+:root{
+  --bg:#f3f1ee; --paper:#fbfaf8; --fg:#1d2230; --muted:#5d6272; --line:#d9d5ce;
+  --wine:#7d1f2c; --navy:#1f2f4f; --ok:#2f6b46; --part:#8a6411; --todo:#7d1f2c; --pause:#6b6f7a;
+  --ok-bg:#e3efe6; --part-bg:#f4ead2; --todo-bg:#f3e1e3; --pause-bg:#e7e8eb;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14171e; --paper:#1b1f28; --fg:#e8e6e2; --muted:#a3a7b3; --line:#2f3542;
+  --wine:#e0828f; --navy:#9fb4dc; --ok:#8fd0a6; --part:#e2bf6e; --todo:#ef9aa5; --pause:#a9adb8;
+  --ok-bg:#1d3326; --part-bg:#3a2f15; --todo-bg:#3b1f24; --pause-bg:#2a2e37; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14171e; --paper:#1b1f28; --fg:#e8e6e2; --muted:#a3a7b3; --line:#2f3542;
+  --wine:#e0828f; --navy:#9fb4dc; --ok:#8fd0a6; --part:#e2bf6e; --todo:#ef9aa5; --pause:#a9adb8;
+  --ok-bg:#1d3326; --part-bg:#3a2f15; --todo-bg:#3b1f24; --pause-bg:#2a2e37; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);padding-inline:16px;padding-block:40px 64px}
+.wrap{max-width:1180px;margin:0 auto;display:grid;gap:48px}
+.narrow{max-width:760px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:700;color:var(--navy)}
+h2{font-size:24px;font-weight:600;color:var(--navy)}
+h3{font-size:17px;font-weight:600}
+p{margin:0}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--wine);font-weight:600}
+.lead{font-size:19px;color:var(--fg)}
+.muted{color:var(--muted)}
+header{display:grid;gap:16px}
+section{display:grid;gap:20px}
+code{font:13px/1.4 var(--mono);background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:1px 5px;white-space:nowrap}
+
+/* поток схемы */
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:f}
+.flow div{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--navy);padding:14px;display:grid;gap:6px;align-content:start;min-width:0}
+.flow div:nth-child(4){border-top-color:var(--wine)}
+.flow b{font-size:15px}
+.flow span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.flow{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.flow{grid-template-columns:1fr}}
+
+/* таблица веток */
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:900px;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--bg)}
+td:first-child{font-weight:600;width:16%}
+td.n{font-variant-numeric:tabular-nums}
+tr.grp td{background:var(--bg);color:var(--wine);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding-block:8px}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.ok{background:var(--ok-bg);color:var(--ok)}
+.part{background:var(--part-bg);color:var(--part)}
+.todo{background:var(--todo-bg);color:var(--todo)}
+.pause{background:var(--pause-bg);color:var(--pause)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:14px;color:var(--muted);align-items:center}
+
+/* этапы */
+ol.stages{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+ol.stages li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+ol.stages .st{font-weight:600;color:var(--wine)}
+ol.stages .st small{display:block;margin-top:6px}
+ol.stages li>div{display:grid;gap:6px}
+@media (max-width:560px){ol.stages li{grid-template-columns:1fr;gap:6px}}
+ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.box{background:var(--paper);border:1px solid var(--line);padding:20px;display:grid;gap:12px;align-content:start}
+footer{font-size:13px;color:var(--muted)}
+.no{background:var(--pause-bg);color:var(--pause);text-decoration:line-through}
+/* приёмы по веткам */
+.filt{display:flex;flex-wrap:wrap;gap:8px}
+.filt button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--line);background:var(--paper);color:var(--fg);border-radius:999px;cursor:pointer}
+.filt button.on{background:var(--navy);border-color:var(--navy);color:var(--paper)}
+.filt button:focus-visible,summary:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+h3.grp{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--wine);margin-top:12px}
+details.br{background:var(--paper);border:1px solid var(--line)}
+details.br summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:14px 18px}
+details.br summary::-webkit-details-marker{display:none}
+details.br summary .bn{font-weight:600;font-size:16px}
+details.br summary .bn::before{content:"+";display:inline-block;width:18px;color:var(--wine)}
+details.br[open] summary .bn::before{content:"−"}
+details.br summary .bw{grid-column:1;font-size:14px;color:var(--muted);padding-left:18px}
+details.br summary .chips{grid-column:2;grid-row:1/3;display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;align-content:center;max-width:300px}
+@media (max-width:640px){details.br summary{grid-template-columns:1fr}details.br summary .chips{grid-column:1;grid-row:auto;justify-content:flex-start;padding-left:18px;max-width:none}}
+ul.pr{list-style:none;margin:0;padding:0 18px 12px;display:grid;gap:0}
+ul.pr li{display:grid;grid-template-columns:100px minmax(0,1fr);gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+ul.pr li .pill{justify-self:start;align-self:start;margin-top:2px}
+ul.pr li small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+@media (max-width:480px){ul.pr li{grid-template-columns:1fr;gap:4px}}
+.docs{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.docs div{background:var(--paper);border:1px solid var(--line);padding:14px;display:grid;gap:4px;align-content:start}
+.docs b{font-size:15px}
+.docs span{font-size:14px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<header class="narrow">
+  <p class="eyebrow">Китайские автозапчасти · опт и розница · Россия</p>
+  <h1>Полный цикл привлечения клиентов на запчасти</h1>
+  <p class="lead">Ведём покупателя от первого поиска до повторного заказа. Находим автосервисы, мастерские, магазины и автопарки, которым нужны запчасти для китайских машин. Выходим на каждого лично, принимаем все заказы в одну точку с меткой источника и раз в месяц смотрим, какой канал приносит прибыль.</p>
+  <p class="muted">Такую систему мы уже собирали в другой отрасли, механизмы те же. Документ разбирает схему по веткам: что делаем, какие инструменты уже умеем и какие приёмы берём. Приёмы взяты из наших скиллов (поиск компаний и досье, сайты, маркетплейсы, договорённости) и конспектов около 60 книг по продажам и маркетингу: SPIN Selling, Challenger Sale, The Mom Test, Obviously Awesome, Котлер, Grewal, SEO 2025 и другие.</p>
+</header>
+
+<section>
+  <h2>Как устроена схема</h2>
+  <div class="flow">
+    <div><b>1. Находим</b><span>СТО и мастерские по маркам, магазины запчастей, автопарки, тендеры, сообщества мастеров</span></div>
+    <div><b>2. Выходим лично</b><span>Вопрос о его потерях, а не прайс. Предложение под его марки, пробный заказ</span></div>
+    <div><b>3. Витрины для водителей</b><span>Авито, Ozon и Wildberries, поиск Яндекса, Карты, клубы владельцев, короткие видео</span></div>
+    <div><b>4. Один вход заказов</b><span>Подбор по VIN или артикулу в боте и на сайте, одна таблица остатков, Bitrix24 с меткой источника</span></div>
+    <div><b>5. Удержание и оценка</b><span>Напоминания о ТО, кто стал заказывать меньше, какой канал дал прибыль</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Опт и розница рядом</h2>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Опт: СТО, мастерские, магазины, парки</th><th>Розница: водители</th></tr></thead>
+    <tbody>
+      <tr><td>Кто покупает</td><td>Компании, регулярно, десятки заказов в месяц</td><td>Владелец машины, когда нужна деталь</td></tr>
+      <tr><td>Главные каналы</td><td>Карты и 2ГИС → личное предложение; оптовые площадки; тендеры; чаты мастеров</td><td>Авито, Ozon и WB, поиск Яндекса, Карты, клубы владельцев</td></tr>
+      <tr><td>Что решает</td><td>Наличие ходовых позиций, срок, отсрочка, лёгкий возврат</td><td>Быстро нашёл, точно подобрали по VIN, понятная цена</td></tr>
+      <tr><td>Что автоматизируем</td><td>Сбор базы, сегменты по маркам, черновики писем, бот заказа по артикулу</td><td>Объявления из одной таблицы, ответы в чате, бот по VIN, напоминания о ТО</td></tr>
+      <tr><td>Скорость результата</td><td>Медленный старт, большие стабильные заказы</td><td>Быстрый старт, много мелких заказов</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="priemy">
+  <h2>Как ведём каждую ветку</h2>
+<!--PRIEMY-->
+<p class="muted">В схему вошли 128 приёмов: уже умеем 11, делаем 111, нужно от партнёра 4, не делаем 2. Нажмите на ветку, чтобы раскрыть её.</p>
+<div class="filt" role="group" aria-label="Фильтр по статусу"><button type="button" class="on" data-f="all">Все</button><button type="button" data-f="ok">уже умеем</button><button type="button" data-f="wait">нужно от партнёра</button><button type="button" data-f="new">делаем</button><button type="button" data-f="no">не делаем</button><button type="button" id="openall">Раскрыть всё</button></div>
+<h3 class="grp">Опт</h3>
+<details class="br" id="sto"><summary><span class="bn">Автосервисы и мастерские (СТО)</span><span class="bw">Главный оптовый клиент: один сервис = десятки заказов в месяц</span><span class="chips"><span class="pill ok">уже умеем 2</span><span class="pill todo">делаем 16</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>ИИ-поиск всех СТО региона</b> — сборщик Яндекс Карт и 2ГИС: название, адрес, телефон, сайт, рубрики, отзывы<small>наш сборщик Карт/2ГИС</small></div></li>
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Досье на каждый сервис</b> — юрлицо по ИНН, отзывы, соцсети, сайт, сколько постов, есть ли кузовной цех<small>наш сборщик досье</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сегменты по маркам из отзывов</b> — ИИ читает отзывы и сайт: кто чинит Haval, Chery, Geely, Changan, Exeed — эти первыми<small>Котлер ММ; Challenger (делить по потребности)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Карта оценки сервиса 0–100</b> — марки, число постов, рейтинг, сеть или одиночка, район → «писать первым / позже / не наш»<small>Vuibert; Мукминов</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Кто решает в сервисе</b> — владелец, мастер-приёмщик, закупщик — каждому свой довод (владельцу деньги, приёмщику скорость)<small>Котлер 7.0; Belch (закупочный центр)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Два типа хозяев — два письма</b> — мастер-владелец (качество детали, «не вернут машину») и управленец (маржа, оборот постов)<small>Whalen</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Первый контакт — вопрос, а не прайс</b> — «Сколько дней в среднем машина ждёт деталь?»<small>SPIN; LinkedIn Sales</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Цена простоя поста</b> — «Пост стоит — сервис теряет выручку часа работы»; считаем вместе с ним<small>Challenger (цена бездействия); SaaS Playbook</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Личное предложение под его марки</b> — «Вижу, вы чините Haval — вот 20 ходовых позиций с наличием и сроком»<small>схема 13.10; Kleon</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Пробный заказ</b> — небольшая партия по выгодной цене, доставка точно в срок — проверка без риска<small>Котлер 7.0; Cloud</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Идти «за советом»</b> — первые 10 разговоров — «какие детали на китайцы вечно не найти?»; лучшие собеседники становятся клиентами<small>Mom Test</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Лестница скидок из реальной экономии</b> — за объём, накопительная за квартал, за быструю оплату; ступени плавные<small>Vuibert; Grewal</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Отсрочка постоянным</b> — после 3–5 заказов без проблем; лимит по истории оплат<small>Grewal; Hill</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Склад ходовых позиций под марки региона</b> — в предложении обещаем срок поставки, а не «под заказ»<small>Котлер «10 грехов» (Caterpillar)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Одно напоминание через 3–5 дней с новым поводом</b> — новое поступление, приход контейнера, ходовые позиции; дальше пауза<small>схема 13.10; Dickey</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>80/20</b> — 20% самых активных сервисов — личный менеджер, особые условия, ранний доступ к новым поступлениям<small>Котлер ММ</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>«Партнёрский сервис»</b> — отметка для лучших: мы советуем их водителям из розницы, они берут у нас детали<small>Котлер Digital; SaaS Playbook</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Совместные материалы</b> — «Как отличить качественный аналог от подделки» за подписью сервиса и поставщика<small>SaaS; Котлер 4.0</small></div></li>
+</ul></details>
+<details class="br" id="magaziny"><summary><span class="bn">Магазины автозапчастей</span><span class="bw">Им нужен надёжный оптовый поставщик по китайским маркам</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 6</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Сбор магазинов в районах и городах области</b> — Карты, 2ГИС, Авито-магазины<small>наш сборщик</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Что ценит магазин</b> — наличие ходовых, понятный прайс-лист, быстрый повторный заказ, возвраты без споров<small>Grewal; consumer_behavior</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Прайс одной таблицей с кроссами</b> — артикул, аналоги, применимость по моделям — магазину легко встроить в свой каталог<small>High-Priced (набор партнёра)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Простой повторный заказ</b> — личный кабинет или бот: артикул → наличие → заказ<small>consumer_behavior_b; схема 13.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Правила против спора каналов</b> — одна цена для всех оптовиков одного уровня; в розницу не дешевле, чем отдаём магазину<small>Grewal; Котлер Digital</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Территория</b> — 2–3 магазина на район, без навязанного эксклюзива<small>Grewal; Котлер ММ</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Материалы для его покупателей</b> — таблички «запчасти для китайских авто», QR на подбор по VIN<small>Belch (совместная реклама)</small></div></li>
+</ul></details>
+<details class="br" id="parki"><summary><span class="bn">Автопарки</span><span class="bw">Такси, доставка, каршеринг, корпоративные парки: большие объёмы расходников</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 6</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Сбор парков</b> — Карты, 2ГИС, реестр такси, сайты служб доставки<small>наш сборщик</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Профиль идеального клиента</b> — парк с китайскими машинами, своё ТО, 20+ машин<small>Котлер Digital (ABM)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Рамочный договор на расходники</b> — фильтры, колодки, масло по фиксированным ценам на квартал<small>Котлер ММ; Grewal</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Комплекты ТО на модель</b> — один артикул «ТО-15 000 Chery Tiggo 7» — закупщику проще<small>High-Priced (лестница продуктов)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>График поставок под их ТО</b> — заказ приходит до того, как машины встанут на обслуживание<small>Котлер Digital (логика 4S)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сначала главный механик, потом закупщик</b> — механику — качество и срок, закупщику — цена и документы<small>Котлер 7.0</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Отчёт парку раз в месяц</b> — сколько купили, сколько сэкономили на простое<small>Котлер ММ (программа экономии)</small></div></li>
+</ul></details>
+<details class="br" id="ploshadki"><summary><span class="bn">Оптовые площадки</span><span class="bw">Emex, Exist, Autopiter, ZZap: заказы приходят сами</span><span class="chips"><span class="pill pause">нужно от партнёра 1</span><span class="pill todo">делаем 4</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Прайс на площадках из одной таблицы остатков</b> — обновление автоматически, без ручной правки<small>схема 13.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Правильные кроссы и применимость</b> — без этого площадка не показывает деталь по номеру<small>Clarke (точность карточки)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Срок поставки честный</b> — площадки понижают поставщиков за срыв сроков<small>Котлер ММ (сервисное обещание)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сравнить цены конкурентов по ходовым артикулам раз в неделю</b> — только открытые данные<small>Котлер 10 грехов; Grewal</small></div></li>
+<li data-s="wait"><span class="pill pause">нужно от партнёра</span><div><b>Какие площадки уже подключены у партнёра</b><small>вопрос партнёру</small></div></li>
+</ul></details>
+<details class="br" id="tendery"><summary><span class="bn">Тендеры</span><span class="bw">Закупки запчастей у предприятий и госзаказчиков</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 5</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Сборщик тендеров ЕИС</b> — новые закупки по маркам и региону каждый день<small>наш сборщик тендеров</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Коммерческие закупки</b> — Fabrikant, B2B-Center, Тендерплан<small>наш опыт площадок</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Не больше двух тендеров в квартал на старте</b> — нет доступа к заказчику — не тратить недели<small>Weiss; Challenger</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>КП из готовых блоков</b> — реквизиты, сертификаты, сроки — собраны заранее<small>Keller</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Расчёт ставки</b> — прибыль при победе × вероятность<small>Котлер ММ</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Без откатов, «тест газеты»</b><small>Hill</small></div></li>
+</ul></details>
+<details class="br" id="mastera"><summary><span class="bn">Сообщества мастеров</span><span class="bw">Telegram-чаты автомехаников и кузовщиков</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 3</span><span class="pill no">не делаем 1</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Поиск чатов по региону и маркам</b> — наш поиск Telegram-чатов<small>наш сборщик</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сначала польза, потом предложение</b> — советы по подбору аналогов, разборы типичных поломок китайских моделей<small>Clarke; Котлер 4.0</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>В сообществе честно говорить, кто ты</b> — «поставщик запчастей, отвечаю по деталям»<small>Котлер 4.0</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Слушать открытые обсуждения</b> — «где взять…», «ищу…», жалобы на поставщиков — сигнал<small>Котлер 4.0; LinkedIn Sales</small></div></li>
+<li data-s="no"><span class="pill no">не делаем</span><div><b>Рассылка участникам в личку</b> — участников не собираем и не пишем им<small>правило</small></div></li>
+</ul></details>
+<h3 class="grp">Розница</h3>
+<details class="br" id="avito"><summary><span class="bn">Авито</span><span class="bw">Главная площадка запчастей в России</span><span class="chips"><span class="pill todo">делаем 7</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Объявление на каждую ходовую позицию</b> — марка, модель, годы, артикул, аналоги в названии<small>схема 13.10; опыт SEO карточек 4 года</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Объявления из одной таблицы остатков</b> — продано — объявление снимается само<small>схема 13.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>ИИ отвечает в чате быстро</b> — подбор по VIN или фото, сложное — менеджеру с заполненными данными<small>Prediction Machines (человек там, где ставки)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Шаблоны быстрых ответов</b> — «подойдёт ли на 2021 год», «есть ли оригинал», «сколько доставка»<small>схема воронки</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Не демпинговать</b> — низкая цена без объяснения = «подделка» в глазах покупателя<small>High-Priced</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Через 2–3 недели усиливаем объявления с диалогами</b><small>схема воронки</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Отзывы после каждой продажи</b> — просьба в чате после получения<small>Clarke</small></div></li>
+</ul></details>
+<details class="br" id="mp"><summary><span class="bn">Ozon и Wildberries</span><span class="bw">Расходники, аксессуары, комплекты ТО</span><span class="chips"><span class="pill pause">нужно от партнёра 1</span><span class="pill todo">делаем 4</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Карточки с применимостью и артикулами</b> — SEO карточек — её 4 года на WB и Ozon<small>опыт; Clarke</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Комплекты вместо отдельных деталей</b> — «комплект ТО» на модель — выше чек, меньше конкурентов<small>High-Priced; dropship-lessons (наборы)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Юнит-экономика до рубля</b> — комиссия, логистика, реклама, возвраты; реклама ≤15% выручки<small>опыт WB; dropship-lessons</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Отбор позиций по спросу</b> — ходовые артикулы по поиску площадки и Вордстату<small>тренд-радар (метод)</small></div></li>
+<li data-s="wait"><span class="pill pause">нужно от партнёра</span><div><b>Есть ли у партнёра кабинеты и документы для категории</b> — декларации и сертификаты<small>вопрос партнёру</small></div></li>
+</ul></details>
+<details class="br" id="poisk"><summary><span class="bn">Поиск Яндекса и сайт</span><span class="bw">Люди ищут по артикулу и «колодки Haval Jolion»</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 6</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Сайт с разделами и формой с меткой источника</b> — наш опыт сайтов<small>наш опыт</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Страница на каждую популярную модель</b> — «Запчасти Haval Jolion — в наличии», каталог по артикулам и аналогам<small>Davidson; Clarke</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Страница «запрос + город»</b> — «запчасти Chery Москва»<small>Davidson</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Ответы на частые вопросы по 40–50 слов</b> — «подойдёт ли аналог», «чем оригинал отличается»<small>Clarke</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Директ: защитить запрос с названием компании, цели Метрики</b><small>Belch; новости</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Статьи «как выбрать» и «5 мифов об аналогах»</b><small>Котлер ММ; Fraser</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Ожидание по сроку</b> — SEO даёт трафик через 1–2 месяца<small>Belch</small></div></li>
+</ul></details>
+<details class="br" id="karty"><summary><span class="bn">Яндекс Карты и 2ГИС</span><span class="bw">Люди едут «туда, где есть»</span><span class="chips"><span class="pill todo">делаем 4</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Карточка заполнена полностью</b> — все категории, фото склада и витрины, часы, марки, товары<small>Clarke; Davidson</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Разбор 3–5 карточек конкурентов по 10 факторам</b> — своя «больше, чем у них»<small>Clarke</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Отзыв после каждой покупки</b> — QR на чеке и пакете<small>Clarke</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Ссылка на сайт с меткой</b> — видно, что заявка пришла с Карт<small>схема воронки</small></div></li>
+</ul></details>
+<details class="br" id="kluby"><summary><span class="bn">Клубы владельцев</span><span class="bw">Telegram-чаты и форумы владельцев Haval, Chery, Geely</span><span class="chips"><span class="pill todo">делаем 3</span><span class="pill no">не делаем 1</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Полезные советы и подбор, а не реклама</b> — «какие колодки не скрипят на Tiggo»<small>схема 13.10; Котлер 4.0</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Договориться с админом о рубрике</b> — «вопрос по запчастям» раз в неделю<small>схема (как с админами чатов)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Скидка для участников клуба по коду</b> — видно, сколько продаж дал клуб<small>High-Priced (своя метка на источник)</small></div></li>
+<li data-s="no"><span class="pill no">не делаем</span><div><b>Личные сообщения участникам</b> — только если человек сам написал<small>правило</small></div></li>
+</ul></details>
+<details class="br" id="video"><summary><span class="bn">Короткие видео</span><span class="bw">YouTube Shorts, VK Клипы, Rutube</span><span class="chips"><span class="pill todo">делаем 4</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>«Как поменять фильтр на Chery Tiggo за 10 минут»</b> — ссылка на комплект с меткой<small>схема 13.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>«Оригинал или аналог: разбираем две детали»</b> — демонстрация, «увидеть — значит поверить»<small>Belch</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Субтитры в каждом ролике</b> — смотрят без звука<small>SMM</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Ниша свободна</b> — проверить, есть ли у конкурентов живой канал по китайским маркам<small>SMM</small></div></li>
+</ul></details>
+<h3 class="grp">Сердце схемы</h3>
+<details class="br" id="vin"><summary><span class="bn">Подбор по VIN и артикулу</span><span class="bw">Бот и сайт: прислал VIN или фото — получил детали и цену</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 4</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Telegram-бот, который принимает сообщения и файлы</b> — наш бот<small>наш опыт</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Бот подбора: VIN → модель → подходящие детали → цена и срок</b><small>схема 13.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Неуверен — сразу человеку с заполненными данными</b><small>Prediction Machines; новости</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сервисам — заказ по артикулу в один шаг</b><small>consumer_behavior_b</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Ответ в тот же час</b> — скорость важнее скидки<small>High-Priced; Котлер 7.0</small></div></li>
+</ul></details>
+<details class="br" id="ostatki"><summary><span class="bn">Одна таблица остатков</span><span class="bw">Все площадки обновляются из одного места</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill pause">нужно от партнёра 1</span><span class="pill todo">делаем 2</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Ежедневная сверка остатков с автоснятием</b> — делали для интернет-магазина<small>наш опыт</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Авито, площадки, маркетплейсы, сайт — из одной таблицы</b><small>схема 13.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Какие позиции ищут, а у нас нет</b> — список для закупки в Китае<small>схема 13.10; Prediction Machines</small></div></li>
+<li data-s="wait"><span class="pill pause">нужно от партнёра</span><div><b>Есть ли у партнёра таблица остатков и как часто обновляется</b><small>вопрос партнёру</small></div></li>
+</ul></details>
+<details class="br" id="crm"><summary><span class="bn">Заявка → CRM</span><span class="bw">Каждый клиент, заказ и источник в Bitrix24</span><span class="chips"><span class="pill todo">делаем 5</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Заявка = сделка с суммой и меткой источника</b> — иначе не посчитать, какой канал платит<small>новости 12.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Карточка сервиса: марки, объём, отсрочка, кто решает</b><small>Котлер ММ; Weiss</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Классификатор заявок</b> — опт / розница / подбор по VIN / возврат / другое<small>Gulli</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Ответственный у каждой заявки, список «зависших» раз в неделю</b><small>Котлер ММ</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Журнал касаний</b> — действие, дата, реакция<small>Vuibert</small></div></li>
+</ul></details>
+<details class="br" id="uderzhanie"><summary><span class="bn">Удержание и повторные заказы</span><span class="bw">Расходники нужны каждые несколько месяцев</span><span class="chips"><span class="pill todo">делаем 5</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Напоминание о ТО по пробегу</b> — через 6–10 тыс. км: «вот комплект для вашей машины» (только тем, кто сам купил и согласился)<small>схема 13.10; Котлер Digital</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Кто стал заказывать меньше</b> — раз в месяц ИИ отмечает сервисы с падением — менеджер звонит<small>схема 13.10; SaaS</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>После первого заказа — звонок через неделю</b> — всё ли подошло, что ещё нужно<small>Grewal</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сценарий «не подошло»</b> — быстрый обмен без спора — главный страх покупателя запчастей<small>Котлер 7.0 (HEARD)</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Довольных просим о рекомендации коллегам</b> — сервис сервису<small>High-Priced; Котлер ММ</small></div></li>
+</ul></details>
+<details class="br" id="ocenka"><summary><span class="bn">ИИ-оценка воронки</span><span class="bw">Какой канал дал заказы и прибыль</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 5</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Панель с цифрами по каналам</b> — наш опыт панелей<small>наш опыт</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Воронка по шагам</b> — найдено → написали → ответили → пробный заказ → постоянный клиент<small>SaaS; DM</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Считаем прибыль, а не клики</b> — заказы с меткой, маржа, повторные<small>Weiss; Vuibert</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Какие артикулы ищут чаще всего</b> — список для закупки и для объявлений<small>Prediction Machines</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сверять с сезоном</b> — шины, щётки, аккумуляторы — сезонные<small>Котлер Digital</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Живой разговор с клиентом раз в месяц</b> — аналитика его не заменяет<small>Котлер 7.0</small></div></li>
+</ul></details>
+<h3 class="grp">Сквозные правила</h3>
+<details class="br" id="utp"><summary><span class="bn">Позиционирование</span><span class="bw">Почему у нас, а не у соседа по рынку</span><span class="chips"><span class="pill todo">делаем 7</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Главная идея</b> — не «у нас есть запчасти», а «машина клиента не стоит без детали»<small>Challenger; схема 13.10</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Ответ «почему мы» без слов «качество, надёжность, лучшие цены»</b><small>Challenger; Dunford</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Особенность → выгода → ценность</b> — свой поставщик в Китае → ходовые всегда в наличии → пост не простаивает<small>Dunford</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Настоящие альтернативы клиента</b> — «крупный дистрибьютор», «ждать оригинал», «разборка»<small>Dunford</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Узкая специализация</b> — «запчасти для китайских авто» вместо «всё для всех»<small>Dunford; Tracy</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сервисное обещание цифрой</b> — ответ за N минут, поставка ходовых за N дней, обмен за N дней<small>Tracy; 8-Figure</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Честно про оригинал и аналог</b> — у каждой позиции пометка, гарантия на оба<small>Котлер 7.0 (люкс = доверие); Belch (Say–Do–Confirm)</small></div></li>
+</ul></details>
+<details class="br" id="pisma"><summary><span class="bn">Первый контакт с компанией</span><span class="bw">Как пишем и звоним сервисам, магазинам, паркам</span><span class="chips"><span class="pill todo">делаем 6</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Схема VFWPA</b> — что улучшаем → «ничего не продаём» → чего не понимаем → почему вы → просьба<small>Mom Test</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Первая строка о его деле</b> — его марки, его район, его отзывы<small>Kleon; Dickey</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>План звонка SPIN</b> — ситуация → проблема → последствия → выгода; следующий шаг со сроком<small>Rackham SPIN</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Открывать выгодой, без «удобно говорить?»</b><small>Moore</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Без массовых рассылок</b> — личные письма малыми партиями, отправляет человек<small>Clarke; Tracy</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Пишем первыми только компаниям</b> — частным лицам — только когда сами обратились<small>правило</small></div></li>
+</ul></details>
+<details class="br" id="dogovor"><summary><span class="bn">Договор, документы, возвраты</span><span class="bw">Чтобы сделка не развалилась после первой отгрузки</span><span class="chips"><span class="pill pause">нужно от партнёра 1</span><span class="pill todo">делаем 5</span></span></summary><ul class="pr">
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Документы к каждой поставке</b> — счёт, накладная, ЭДО, декларации и сертификаты на группы товаров<small>Котлер ММ; Hill</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Правила возврата письменно</b> — что можно вернуть, срок, кто платит доставку<small>Grewal; Dahlström</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Проверка платёжеспособности перед отсрочкой</b> — ЕГРЮЛ, суды, долги<small>«10 грехов»</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Валютная оговорка</b> — цена закупки в юанях — фиксировать курс в день оплаты<small>Hill</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Сроки только после подтверждения поставщика</b><small>Grewal</small></div></li>
+<li data-s="wait"><span class="pill pause">нужно от партнёра</span><div><b>Какие документы есть у партнёра на товар</b> — декларации ЕАЭС, сертификаты<small>вопрос партнёру</small></div></li>
+</ul></details>
+<details class="br" id="agenty"><summary><span class="bn">Автоматизация и ИИ</span><span class="bw">Что делает система, а что люди</span><span class="chips"><span class="pill ok">уже умеем 1</span><span class="pill todo">делаем 4</span></span></summary><ul class="pr">
+<li data-s="ok"><span class="pill ok">уже умеем</span><div><b>Сборщики данных, досье, панель, бот</b> — уже работают в другой отрасли<small>наш опыт</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Система ищет и готовит, человек звонит и отгружает</b><small>схема 13.10; Prediction Machines</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Черновик письма от ИИ, отправляет человек</b><small>Котлер 4.0</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Частые вопросы — бот сам, личное — черновик + человек, жалобы — только человек</b><small>dropship-lessons</small></div></li>
+<li data-s="new"><span class="pill todo">делаем</span><div><b>Агент не меняет цены и правила сам</b> — только предложение и «да» человека<small>Prediction Machines</small></div></li>
+</ul></details>
+<!--/PRIEMY-->
+</section>
+
+<section>
+  <h2>Что готовим к запуску</h2>
+  <div class="docs">
+    <div><b>Таблица остатков с кроссами</b><span>Артикул, аналоги, применимость по моделям и годам, наличие, срок. Из неё обновляются все площадки</span></div>
+    <div><b>База сервисов с сегментами</b><span>Все СТО и мастерские региона: марки, посты, рейтинг, кто решает, оценка 0–100</span></div>
+    <div><b>Оптовые условия на одной странице</b><span>Лестница скидок, отсрочка, сроки, возвраты, одна цена для всех оптовиков одного уровня</span></div>
+    <div><b>Прайс «ходовые для ваших марок»</b><span>20 самых нужных позиций под Haval, Chery, Geely и другие марки с наличием и сроком</span></div>
+    <div><b>Письма и скрипт звонка по SPIN</b><span>Для владельца сервиса, мастера-приёмщика, закупщика парка, магазина</span></div>
+    <div><b>Бот подбора по VIN</b><span>VIN или фото → модель → детали → цена и срок; сложное сразу человеку</span></div>
+    <div><b>Объявления и карточки</b><span>Авито, Ozon, WB: названия с маркой, моделью, годами, артикулом и аналогами</span></div>
+    <div><b>Комплекты ТО на популярные модели</b><span>Один артикул вместо пяти: удобнее покупателю, выше средний чек</span></div>
+    <div><b>Страницы моделей на сайте</b><span>«Запчасти Haval Jolion — в наличии», каталог по артикулам</span></div>
+    <div><b>Правила возврата и документы</b><span>Что вернуть, срок, кто платит доставку; декларации и сертификаты</span></div>
+    <div><b>Ежемесячный отчёт по каналам</b><span>Заказы, прибыль, повторные клиенты, какие артикулы ищут, а у нас нет</span></div>
+  </div>
+</section>
+
+<section class="narrow">
+  <h2>Порядок запуска</h2>
+  <ol class="stages">
+    <li><div class="st">Этап 1<small class="muted">2–3 недели</small></div><div><h3>Витрины и база</h3><p>Таблица остатков с кроссами → Авито и маркетплейсы. Карточка точки на Картах и в 2ГИС. База автосервисов региона с сегментами по маркам.</p></div></li>
+    <li><div class="st">Этап 2<small class="muted">месяц</small></div><div><h3>Оптовые клиенты</h3><p>Оптовые условия, личные предложения сервисам и магазинам, пробные заказы. Бот подбора по VIN, Bitrix24 с меткой источника.</p></div></li>
+    <li><div class="st">Этап 3<small class="muted">дальше</small></div><div><h3>Рост и удержание</h3><p>Сайт со страницами моделей, оптовые площадки, тендеры, автопарки, клубы владельцев, видео. Напоминания о ТО, ежемесячная оценка каналов.</p></div></li>
+  </ol>
+</section>
+
+<section>
+  <div class="two">
+    <div class="box">
+      <h3>Что уточнить у партнёра</h3>
+      <ul>
+        <li>Какие запчасти: для каких марок, оригинал или аналоги, новые или б/у</li>
+        <li>Кому продаёт сейчас: опт, розница, оба</li>
+        <li>Где продаёт: точка на рынке, Авито, маркетплейсы, оптовые площадки, сайт</li>
+        <li>Есть ли таблица остатков и как часто обновляется</li>
+        <li>Регион доставки, сроки, склад в России</li>
+        <li>Какие документы есть на товар: декларации, сертификаты</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Чего не делаем</h3>
+      <ul>
+        <li>Первыми пишем только компаниям. Частным лицам — только когда сами обратились</li>
+        <li>Не собираем участников чатов и не рассылаем им сообщения</li>
+        <li>Не делаем массовых рассылок: только личные письма тем, кому тема подходит</li>
+        <li>Не демпингуем: низкая цена без объяснения выглядит как подделка</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="narrow">Основа: схема лидогенерации по автозапчастям (13.10.2026) и приёмы из наших скиллов и конспектов книг. Список приёмов — priemy.txt, сборка — build.py.</footer>
+</div>
+
+<script>
+(function(){
+  var bs=document.querySelectorAll('.filt button[data-f]');
+  bs.forEach(function(b){b.addEventListener('click',function(){
+    bs.forEach(function(x){x.classList.toggle('on',x===b)});
+    var f=b.dataset.f;
+    document.querySelectorAll('ul.pr li').forEach(function(li){li.hidden=!(f==='all'||li.dataset.s===f)});
+    document.querySelectorAll('details.br').forEach(function(d){
+      var any=d.querySelector('ul.pr li:not([hidden])'); d.hidden=!any; if(f!=='all'&&any)d.open=true;});
+  })});
+  var oa=document.getElementById('openall');
+  if(oa)oa.addEventListener('click',function(){
+    var ds=document.querySelectorAll('details.br'), open=![].every.call(ds,function(d){return d.open});
+    ds.forEach(function(d){d.open=open}); oa.textContent=open?'Свернуть всё':'Раскрыть всё';});
+})();
+</script>

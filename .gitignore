@@ -1,0 +1,33 @@
+# ключи и доступы — только на компьютере
+.env
+.env.*
+!.env.example
+*token*.json
+*_keys.json
+*.session
+*.session-journal
+cookies*
+# служебное
+.venv/
+venv/
+__pycache__/
+*.pyc
+~$*
+*.log
+# тяжёлое
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.mp4
+*.pdf
+*.epub
+
+# тексты и архивы книг (авторские) — только конспекты
+arh/
+txt/
+txt13/
+new/
+img_*/
+*.txt
