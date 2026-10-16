@@ -10,5 +10,10 @@ for f in sorted((K/"pereskaz_vse").glob(f"{slug}_*.md")):
     for q in qs:
         parts = [p for p in re.split(r"\.\.\.|…|\[.*?\]", q) if len(norm(p)) > 20]
         if not all(norm(p)[:100] in B for p in parts): bad.append(q)
-    print(f"{f.name}: цитат {len(qs)}, найдено {len(qs)-len(bad)}")
-    for q in bad: print("   НЕТ:", q[:110])
+    words = B.split(); sh = set(" ".join(words[i:i+4]) for i in range(len(words)-3))
+    blizko, net = [], []
+    for q in bad:
+        w = norm(q).split(); s = [" ".join(w[i:i+4]) for i in range(len(w)-3)]
+        (blizko if s and sum(x in sh for x in s)/len(s) >= 0.5 else net).append(q)
+    print(f"{f.name}: цитат {len(qs)}, дословно {len(qs)-len(bad)}, близко к тексту {len(blizko)}, нет в тексте {len(net)}")
+    for q in net: print("   НЕТ:", q[:110])

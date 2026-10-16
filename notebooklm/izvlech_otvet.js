@@ -1,6 +1,5 @@
-// Последний ответ NotebookLM → markdown в window.__md; возвращает длину.
-const bs=[...document.querySelectorAll('button')].filter(b=>/Копировать ответ/.test(b.getAttribute('aria-label')||''));
-const b=bs[bs.length-1]; let c=b; while(c && !(c.innerText && c.innerText.length>3000)) c=c.parentElement;
+// Последний ответ NotebookLM → markdown в window.__md → в буфер обмена. Ждать «Ответ готов.» в конце страницы.
+const all=[...document.querySelectorAll('element-list-renderer')].filter(e=>(e.innerText||'').length>3000); const c=all[all.length-1]; // последний длинный ответ (кнопки «Копировать» у него может не быть)
 function md(n,ind=''){ if(n.nodeType===3) return n.textContent; if(n.nodeType!==1) return ''; const t=n.tagName.toLowerCase(); const cl=(n.className||'').toString();
  if(['button','mat-icon','svg','style','script','follow-up'].includes(t) || /suggestions-container|follow-up/.test(cl)) return '';
  const kids=()=>[...n.childNodes].map(x=>md(x,ind)).join('');
