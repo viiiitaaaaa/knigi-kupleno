@@ -7,11 +7,11 @@
 
 ## НЛП — Hall & Bodenhamer, The User's Manual for the Brain
 - [x] Том 1 (nlp (2).pdf) — NotebookLM: конспект + пересказ 18 частей; сверка: цитаты 99/100 + 1 верна (fifteen=15)
-- [ ] Том 1 — учебная страница + новое в скиллы (love-scripts, dogovorennosti)
-- [ ] Том 2 (nlp (1).pdf, скан → OCR Windows, ocr_win.ps1) — помощник в NotebookLM (источник — «(текст).txt»)
-- [ ] Том 2 — сверка, учёба, скиллы
+- [x] Том 1 — учёба users_manual_brain1_uchoba.html; в скиллы: love-scripts/references/iz_hall_tom1.md
+- [x] Том 2 (nlp (1).pdf, скан → OCR Windows, ocr_win.ps1) — NotebookLM: конспект + 13 файлов пересказа (гл. 1–24)
+- [x] Том 2 — сверка (94/105 цитат, 9 помечены ⚠), учёба users_manual_brain2_uchoba.html; скиллы: love-scripts/references/iz_hall_tom2.md + строка в dogovorennosti
 
-## ОКР (купила 17.10, всё в «куплено»)
+## ОКР — ЖДЁТ её слова (17.10 вечером: «пока доделай только НЛП том 2») (купила 17.10, всё в «куплено»)
 - [ ] Brain Lock — Jeffrey M. Schwartz — okr (1).epub
 - [ ] Stop Obsessing! — Edna B. Foa, Reid Wilson — 1okr.pdf
 - [ ] Getting Over OCD — Jonathan S. Abramowitz — okr (1).pdf (скан Internet Archive, текст слабый → OCR)
