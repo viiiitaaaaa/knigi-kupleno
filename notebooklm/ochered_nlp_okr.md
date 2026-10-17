@@ -11,7 +11,7 @@
 - [x] Том 2 (nlp (1).pdf, скан → OCR Windows, ocr_win.ps1) — NotebookLM: конспект + 13 файлов пересказа (гл. 1–24)
 - [x] Том 2 — сверка (94/105 цитат, 9 помечены ⚠), учёба users_manual_brain2_uchoba.html; скиллы: love-scripts/references/iz_hall_tom2.md + строка в dogovorennosti
 
-## ОКР — ЖДЁТ её слова (17.10 вечером: «пока доделай только НЛП том 2») (купила 17.10, всё в «куплено»)
+## ОКР — её слово 17.10 вечером: «по ОКР, по НЛП» — разбор идёт через ochered_novye_5.md (17.10 вечером: «пока доделай только НЛП том 2») (купила 17.10, всё в «куплено»)
 - [ ] Brain Lock — Jeffrey M. Schwartz — okr (1).epub
 - [ ] Stop Obsessing! — Edna B. Foa, Reid Wilson — 1okr.pdf
 - [ ] Getting Over OCD — Jonathan S. Abramowitz — okr (1).pdf (скан Internet Archive, текст слабый → OCR)

@@ -196,6 +196,11 @@ def main():
         if a.spisok:
             print(f"{len(fs):3} кусков | {TITLES.get(f.stem, f.stem)}")
         jobs += [(c, len(fs)) for c in fs]
+    # книги из pervymi.txt — в начало очереди, в их порядке (15.10.2026, ТОП-10 от Perplexity)
+    pf = pathlib.Path(__file__).with_name("pervymi.txt")
+    if pf.exists():
+        pr = [l.strip() for l in pf.read_text("utf-8").splitlines() if l.strip() and not l.startswith("#")]
+        jobs.sort(key=lambda j: pr.index(j[0].stem.rsplit("_", 1)[0]) if j[0].stem.rsplit("_", 1)[0] in pr else len(pr))
     if a.limit:
         jobs = jobs[:a.limit]
     print(f"кусков всего: {len(jobs)}", flush=True)
