@@ -46,3 +46,10 @@ NotebookLM снова открывается (регион ок). Burn: пуст
 
 ## 18.10 поздно: Burn ГОТОВ через NotebookLM (Freya, authuser=2, блокнот a74af844…)
 Файлы: notebooklm\burn_pontzer_uchoba.md; pereskaz_vse\burn_pontzer_00_konspekt/01/02/03.md (главы 1–9); старые — *_staroe.md. Не сверено, не в v_skilly. Дальше: «Голодный мозг» (Копия 48), 2 Дилтса (36, 37) — каждому нужен НОВЫЙ блокнот с источником с Диска; окно «Диск» вешает Chrome, источник вставляет она руками.
+
+## 18.10 ночь: ВСЕ 4 ОСТАВШИЕСЯ ГОТОВЫ через NotebookLM (Freya, authuser=2)
+- Burn: uchoba + pereskaz 01–03 (гл. 1–9)
+- Голодный мозг: uchoba + pereskaz 01–06 (введение + гл. 1–11); старые — *_staroe.md
+- Changing Belief Systems (Дилтс): только uchoba
+- Sleight of Mouth (Дилтс): только uchoba
+Всё НЕ сверено с книгой, v_skilly и HTML-учёбы нет — по её слову. ТРЮК: окно «Диск» вешает Chrome; источник грузить с ПК — склеить chunks_vse в .txt в scratchpad, перехватить HTMLInputElement.prototype.click после клика «Загрузить файлы», file_upload.
