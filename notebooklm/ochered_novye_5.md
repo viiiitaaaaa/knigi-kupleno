@@ -40,3 +40,6 @@
 
 ## СТОП 18.10.2026 по её слову («книги стоп»)
 Готово через NotebookLM: Stop Obsessing, Getting Over OCD, Mindfulness Workbook, Pyramid Nutrition, Introducing NLP. Остановлено на Burn (помощник убит, итог не проверен). Не начаты: Голодный мозг, Changing Belief Systems, Sleight of Mouth. Файлы «Копия 47/48 (текст).txt» лежат на Диске Freya в «Книги для NotebookLM». Продолжать только по её слову.
+
+## 18.10 вечером: попытка продолжить
+NotebookLM снова открывается (регион ок). Burn: пустой блокнот у Freya https://notebook.google.com/notebook/af8b69e7-987f-47c4-ba7d-b087d52b6fbc?authuser=2 (0 источников). Окно «Диск» зависает и убивает расширение Chrome — источник надо вставить РУКАМИ (Диск → «Копия 47 (текст).txt» → Вставить). Дальше запросы 1–2 (главы 1–9 есть в chunks_vse). Остались: Burn, Голодный мозг («Копия 48»), 2 Дилтса.
