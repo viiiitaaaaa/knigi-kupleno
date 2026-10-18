@@ -53,3 +53,8 @@ NotebookLM снова открывается (регион ок). Burn: пуст
 - Changing Belief Systems (Дилтс): только uchoba
 - Sleight of Mouth (Дилтс): только uchoba
 Всё НЕ сверено с книгой, v_skilly и HTML-учёбы нет — по её слову. ТРЮК: окно «Диск» вешает Chrome; источник грузить с ПК — склеить chunks_vse в .txt в scratchpad, перехватить HTMLInputElement.prototype.click после клика «Загрузить файлы», file_upload.
+
+## 18.10 ночь: ещё готово через NotebookLM
+- Brain Lock: uchoba (с хвостом) + pereskaz 01–04 (гл. 1–11); блокнот 996df2b9… (старый e9efafd9… завис — можно удалить)
+- v_skilly (по конспекту, не сверено): burn_pontzer, changing_belief_systems, sleight_of_mouth
+Дальше ОКР: Imp of the Mind, Unwanted Intrusive Thoughts, Freedom from OCD.
