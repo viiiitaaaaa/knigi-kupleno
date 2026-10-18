@@ -58,3 +58,4 @@ NotebookLM снова открывается (регион ок). Burn: пуст
 - Brain Lock: uchoba (с хвостом) + pereskaz 01–04 (гл. 1–11); блокнот 996df2b9… (старый e9efafd9… завис — можно удалить)
 - v_skilly (по конспекту, не сверено): burn_pontzer, changing_belief_systems, sleight_of_mouth
 Дальше ОКР: Imp of the Mind, Unwanted Intrusive Thoughts, Freedom from OCD.
+- Imp of the Mind: uchoba + pereskaz 01–05 (гл. 1–9; в 02→03 и 04→05 продолжения после обрыва по длине); блокнот a03e171f…
