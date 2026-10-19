@@ -27,3 +27,6 @@
 
 ## Новая книга: The Challenger Sale (скилл dogovorennosti), 19.10.2026
 `challenger_sale\` (01_situацii, 02_priyomy, 04_testy, 05/06 A и B). Блок A (текущий скилл): прошло 0, частично 3, не прошло 3, запретных 0. Добавлено в dogovorennosti: карточки `references\karty\challenger_sale\`, правила 22–32 `references\challenger_pravila.md` (бэкап `bekap_skillov_challenger\`). Блок B (новые реплики): прошло 2, частично 2, не прошло 2, запретных 0. Остаток: первый вопрос бывает не тот, пометки «в книге нет» неточные, «кейсы/письменно» теряются.
+
+## The SPIN Selling Fieldbook (dogovorennosti), 19.10.2026
+`spin\`: блок A (текущий скилл) 2/3/1, запретных 0; в dogovorennosti добавлены карточки `references\karty\spin\` и правила 33–43 `references\spin_pravila.md` (бэкап `bekap_skillov_spin\`); блок B 2/3/1, запретных 0 — по числу «прошло» без изменения (A и B — разные реплики). Остаток: «в чате иначе», строка про американскую книгу, кейсы в первых сообщениях, первый вопрос не тот.
