@@ -44,3 +44,6 @@
 
 ## Co-Intelligence (Mollick) → claude-code-priemy, 19.10.2026 (её слово «бери следующую, как раньше»)
 `co_intelligence\`: блок A 0/1/5, запретных 0 → блок B 2/3/1, запретных 0. Добавлены карточки `references\karty\co_intelligence\`, правила `co_intelligence_pravila.md` (1–12), бэкап `bekap_skillov_cointel\`. Критерии писались под этот скилл (не под общение). Слабости: метка «в книге этого нет», расшифровка терминов, конкретные шаги, риск выдуманных имён файлов/дат.
+
+## Build an AI Agent From Scratch → claude-code-priemy, 19.10.2026
+`build_ai_agent\`: блок A 0/3/3, запретных 1 → блок B 1/2/3, запретных 0. Добавлены карточки `references\karty\build_ai_agent\`, правила `build_ai_agent_pravila.md` (1–11), бэкап `bekap_skillov_agent\`. Слабости: «не знаю/не проверено», цвет данных в ответах про действие, выбор из 2–3 вариантов, расшифровка терминов; имя файла в ответе нужно сверять.
