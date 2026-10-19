@@ -50,3 +50,9 @@
 
 ## Amazon FBA + Shopify (Miller) → dropship-lessons, 19.10.2026
 `amazon_fba\`: блок A 0/0/6, запретных 2 (ставка налога «6 %», $20–30 принято за бюджет) → блок B 0/1/5, запретных 0. Добавлены карточки `references\karty\amazon_fba\`, правила `amazon_fba_pravila.md` (1–11), бэкап `bekap_skillov_fba\`. Улучшение по «прошло» нет; запретные ушли. Слабости: расшифровка терминов, конкретные шаги, метки источника.
+
+## Entrepreneurial Marketing (Kotler) → dropship-lessons, 19.10.2026
+`entrepreneurial_marketing\`: блок A 0/1/5, запретных 4 (метка «из книги» на то, чего в книге нет; примерные цифры) → блок B 1/1/4, запретных 0. Добавлены карточки `references\karty\entrepreneurial_marketing\`, правила `entrepreneurial_marketing_pravila.md`, бэкап `bekap_skillov_em\`. Слабости: мелкие пункты скилла (ориентир маржи, CAC < валовой прибыли), цвета данных, расшифровка терминов, честные альтернативы вместо запрещённого.
+
+## ОЧЕРЕДЬ «11+» ЗАКРЫТА (19.10.2026)
+Все 8 книг: Challenger, Pitch (Klaff, ранее), Million Dollar Consulting (Weiss, ранее), A Mind for Numbers, Co-Intelligence, Build an AI Agent, Amazon FBA, Entrepreneurial Marketing — разложены в скиллы (dogovorennosti, kak-uchitsya, claude-code-priemy, dropship-lessons). Сводка по тестам: запретные ошибки почти везде ушли; «прошло» растёт не везде (Mind for Numbers и Amazon FBA — 0 прошло). Главные повторяющиеся слабости: метка источника, расшифровка терминов, цвет данных, мелкие обязательные пункты скилла, «один вопрос первым».
