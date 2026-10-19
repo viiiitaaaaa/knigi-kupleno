@@ -56,3 +56,6 @@
 
 ## ОЧЕРЕДЬ «11+» ЗАКРЫТА (19.10.2026)
 Все 8 книг: Challenger, Pitch (Klaff, ранее), Million Dollar Consulting (Weiss, ранее), A Mind for Numbers, Co-Intelligence, Build an AI Agent, Amazon FBA, Entrepreneurial Marketing — разложены в скиллы (dogovorennosti, kak-uchitsya, claude-code-priemy, dropship-lessons). Сводка по тестам: запретные ошибки почти везде ушли; «прошло» растёт не везде (Mind for Numbers и Amazon FBA — 0 прошло). Главные повторяющиеся слабости: метка источника, расшифровка терминов, цвет данных, мелкие обязательные пункты скилла, «один вопрос первым».
+
+## Make It Stick → kak-uchitsya, 20.10.2026 (её ответ из бота: вариант 2)
+`make_it_stick\`: блок A 0/4/2, запретных 0 → блок B 2/4/0, запретных 0. Критерии на этот раз писались ПОД УЧЁБУ (не под общение) — результат намного лучше, чем у Mind for Numbers (0/0/6 → 0/0/6): прежняя неудача была из-за неверной мерки. Добавлены карточки `references\karty\make_it_stick\`, правила `make_it_stick_pravila.md` (1–10), бэкап `bekap_skillov_mis\`. Слабости: «в книге нет» не везде, мелкие пункты плана. Рекомендация: Mind for Numbers перепроверить тем же способом (критерии под учёбу).
