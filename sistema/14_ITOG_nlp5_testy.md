@@ -47,3 +47,6 @@
 
 ## Build an AI Agent From Scratch → claude-code-priemy, 19.10.2026
 `build_ai_agent\`: блок A 0/3/3, запретных 1 → блок B 1/2/3, запретных 0. Добавлены карточки `references\karty\build_ai_agent\`, правила `build_ai_agent_pravila.md` (1–11), бэкап `bekap_skillov_agent\`. Слабости: «не знаю/не проверено», цвет данных в ответах про действие, выбор из 2–3 вариантов, расшифровка терминов; имя файла в ответе нужно сверять.
+
+## Amazon FBA + Shopify (Miller) → dropship-lessons, 19.10.2026
+`amazon_fba\`: блок A 0/0/6, запретных 2 (ставка налога «6 %», $20–30 принято за бюджет) → блок B 0/1/5, запретных 0. Добавлены карточки `references\karty\amazon_fba\`, правила `amazon_fba_pravila.md` (1–11), бэкап `bekap_skillov_fba\`. Улучшение по «прошло» нет; запретные ушли. Слабости: расшифровка терминов, конкретные шаги, метки источника.
