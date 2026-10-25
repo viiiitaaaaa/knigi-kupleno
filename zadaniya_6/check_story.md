@@ -1,0 +1,8 @@
+# Задание проверяльщику (proverka). Всё по-английски, ответ — по-русски (in Russian).
+Goal: check that rules in a draft skill are really supported by its source notes (no invented facts, numbers or steps).
+Skill file: C:/Users/User/knigi_kupleno/skill_chernovik_glubokiy/storytelling-with-data/SKILL.md
+Source notes (the only truth; read what you need): C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_01.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_02.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_03.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_04.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_05.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_06.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_07.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_08.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_09.md; C:/Users/User/knigi_kupleno/glubokiy/storytelling_data_makeovers_10.md
+Check exactly these 12 lines of the skill (line numbers): 10, 11, 12, 18, 23, 26, 34, 46, 49, 54, 71, 74.
+For each line: find the supporting text in the source notes (grep for key words/numbers). Verdict: СОВПАЛО (claim and numbers are in the source) / ЧАСТИЧНО (what differs) / НЕТ В ИСТОЧНИКЕ. Result line: "N | verdict | quote ≤15 words from source + file name".
+Then total "совпало N из 12" (ЧАСТИЧНО not counted). Also: 1) does the skill have frontmatter with name and description; 2) are there lines with "(заполню сама)" placeholder — only a note.
+Do not edit anything. Step ceiling: at most 30 tool calls; stuck -> stop and report what you have.
