@@ -1,0 +1,2 @@
+<!-- gemini-3.5-flash-lite (Gemini, 2-й читатель), moonwalking_einstein_12.txt -->
+Приёмов нет.

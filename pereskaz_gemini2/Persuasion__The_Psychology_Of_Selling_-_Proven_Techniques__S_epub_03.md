@@ -1,0 +1,4 @@
+<!-- gemini-3.5-flash-lite (Gemini, 2-й читатель), Persuasion__The_Psychology_Of_Selling_-_Proven_Techniques__S_epub_03.txt -->
+### Использование закрытых вопросов · Задавайте вопросы, на которые клиент вынужден отвечать утвердительно («да»), чтобы получить преимущество в переговорах и закрыть сделку. · Пример из текста: «Ask close-ended questions where the customer has to answer yes. If many yeses. You’ve gained an upper hand. The deal is yours.» · (стр. 3)
+
+### Назначение конкретного времени встречи · Предлагайте точную дату и время вместо открытых вопросов о встрече, чтобы повысить вероятность согласия или заставить клиента предложить удобную ему альтернативу. · Пример из текста: «Rather, come up with a clear date and time, “How does Tuesday 5 pm sound to you?” If they are busy, they are likelier to say, “No. I am a bit tied up on Tuesday. Let’s meet on Wednesday during lunch at 1 pm.”» · (стр. 12)

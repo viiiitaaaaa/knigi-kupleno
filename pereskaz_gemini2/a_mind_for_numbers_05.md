@@ -1,0 +1,22 @@
+<!-- gemini-3.5-flash-lite (Gemini, 2-й читатель), a_mind_for_numbers_05.txt -->
+### Создание библиотеки решенных паттернов (чанков) · Регулярно создавайте и пополняйте свою ментальную базу данных готовых методов решения типовых задач, чтобы разгрузить оперативную память и не впадать в ступор под давлением. · «A key to building mental flexibility and expertise is to build your library of chunked solution patterns. This is your rapid-access data bank—always handy in a pinch.» (стр. 118)
+
+### Активное извлечение знаний (тестирование) · Используйте мини-тестирование и активное вспоминание (ретроспекцию) вместо пассивного перечитывания материала — это укрепляет нейронные связи и переносит информацию в долговременную память. · «By building your library of chunks, with plenty of active practicing at retrieving material over and over again, and testing your recall, you are using some of the best methods possible for learning deeply and well.» (стр. 117)
+
+### Получение обратной связи · При самопроверке обязательно сверяйте свои ответы с ключами, решебниками или эталонными решениями, чтобы вовремя исправить ошибки. · «When you are self-testing while you are studying, however, you want to do your best to get feedback and check your answers using solutions manuals, the back of the book, or wherever the solution may lie.» (стр. 117)
+
+### Самоэкспериментирование для проверки гипотез · Проводите контролируемые эксперименты на самом себе (меняйте один параметр на несколько недель и ведите ежедневные замеры), чтобы проверять чужие советы и находить рабочие для себя методы. · «From my acne research I learned that self-experimentation can be used by non-experts to (a) see if the experts are right and (b) learn something they don’t know.» (стр. 133)
+
+### Ведение планировщика-журнала (ведение задач накануне вечером) · Составляйте список задач на следующий день строго накануне вечером (до 5–10 пунктов), чтобы подсознание («зомби-привычки») прорабатывало их во сне и освобождало оперативную память. · «Each night, create the next day’s daily to-do list from the items on the weekly to-do list. Keep it to five to ten items.» (стр. 124)
+
+### Правило «Сначала съешьте лягушку» · Выполняйте самую важную и неприятную задачу в самом начале дня, сразу после пробуждения. · «Do the most important and most disliked jobs first, as soon as you wake up. This is incredibly effective.» (стр. 125)
+
+### Планирование жесткого времени окончания работы · Заранее планируйте время завершения рабочего дня (например, в 17:00), чтобы оставлять время на отдых и избегать выгорания. · «Planning your quitting time is as important as planning your working time. Generally, I aim to quit at 5:00 P.M.» (стр. 127)
+
+### Метод микрозадач при параличе от объема работы · При сильном страхе перед большим объемом задач разбивайте их на 3 микрозадачи, выполняемые за пару минут, и концентрируйтесь только на первой из них (помогает закрыть глаза и мысленно отключить остальные тревоги). · «Write down three “microtasks” that you can do within a few minutes... close your eyes and tell your mind that you have nothing else to worry about... just your first microtask.» (стр. 139)
+
+### Пауза и анализ ситуации перед стартом (Мудрое ожидание) · Не бросайтесь решать сложную задачу или отвечать на эмоциях мгновенно; сделайте паузу на 30–45 секунд, чтобы классифицировать проблему по глубинным принципам, а не по поверхностным признакам. · «Experts took an average of forty-five seconds to figure out how they would categorize a problem according to its underlying physics principles. Undergraduates... simply rushed right in, taking only thirty seconds...» (стр. 138)
+
+### Переговоры и деэскалация эмоций (на основе опыта переговорщиков ФБР) · В конфликтных или эмоционально заряженных ситуациях (переговоры, продажи) избегайте агрессивной реакции на провокации и давайте времени «молекулам эмоций» рассеяться. · «Staving off natural desires to react aggressively to emotional provocations allows time for the molecules of emotion to gradually dissipate. The resulting cooler heads save lives.» (стр. 138)
+
+### Рациональный подход к выбору направления и страсти · Не следуйте слепо за «страстью» без трезвого расчета; развивайте мастерство в нужном деле через упорный труд, и тогда подлинная страсть и интерес придут естественным образом. · «We develop a passion for what we are good at. The mistake is thinking that if we aren’t good at something, we do not have and can never develop a passion for it.» (стр. 139)

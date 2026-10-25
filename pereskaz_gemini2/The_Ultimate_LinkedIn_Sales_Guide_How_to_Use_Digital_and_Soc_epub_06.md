@@ -1,0 +1,36 @@
+<!-- gemini-3.5-flash-lite (Gemini, 2-й читатель), The_Ultimate_LinkedIn_Sales_Guide_How_to_Use_Digital_and_Soc_epub_06.txt -->
+### Искать похожих лидов через «View Similar» · Нажимайте кнопку «view similar» на странице идеального проспекта, чтобы Sales Navigator автоматически находил людей с похожими должностями и бэкграундом в других компаниях. · «Once you find an ideal prospect, simply select the dropdown and Sales Navigator will populate results with similar job titles and backgrounds at other companies.» · (стр. 6)
+
+### Искать «синюю птицу» (Bluebird-поиск) · Ищите в Sales Navigator людей, которые раньше работали в компаниях, которым вы уже что-то продавали, чтобы возобновить отношения на их новом месте работы. · «A Bluebird search on Navigator is where you find people that worked at companies that you've sold to before. You can find them in whichever new roles and companies they may now be in and reignite that relationship.» · (стр. 6)
+
+### Искать ключевые слова в контенте · Ищите через Sales Navigator пользователей, которые употребляли отраслевые ключевые слова, чтобы находить активных потенциальных клиентов и инфоповоды для старта диалога. · «You can search for people on Sales Navigator who have used industry keywords. This will help you find active prospects and also direct you to a piece of content that you can then use to start a conversation with them.» · (стр. 6)
+
+### Использовать фильтр общих интересов («Shared Experiences») · Применяйте фильтр общих точек соприкосновения (например, общие группы в соцсетях), чтобы начать более теплую беседу с потенциальным клиентом. · «It will show you people who share something with you, for example, a group that you may both be in. This then gives you an amazing opportunity to use that to start a warmer conversation.» · (стр. 6)
+
+### Находить самых активных пользователей · Фильтруйте списки по признаку активности («Posted on LinkedIn in the past 30 days»), чтобы находить вовлеченных людей и использовать их посты как повод для начала общения. · «By clicking on ‘Posted on LinkedIn in the past 30 days’, you're going to find the most active prospects on the list. You can then find what they posted and use that as a conversation opener» · (стр. 6)
+
+### Делать профиль максимально подробным для автоподбора лидов · Заполняйте свой профиль и настройки Sales Navigator как можно подробнее, чтобы алгоритмы точнее подбирали для вас потенциальных клиентов. · «The key to this is to ensure you put as much information as you can into your profile and settings to help it find you the best possible leads. The less information you put in, the weaker the leads that will come out.» · (стр. 6)
+
+### Отслеживать смену должностей · Ищите людей, сменивших работу за последние 90 дней, так как они более открыты к смене поставщиков и готовы к диалогу. · «Sales Navigator will show you the people who have changed jobs in the past 90 days, who are potentially very warm prospects for you to approach. You can congratulate them on their new role and use it to start a nicer conversation.» · (стр. 6)
+
+### Проверять просмотры вашего профиля · Регулярно изучайте полный список людей, которые заходили на вашу страницу в Sales Navigator, добавляйте их в контакты и используйте факт просмотра как повод для сообщения. · «Scroll through and find the ones that potentially qualify as prospects, connect and then use the fact they viewed your profile to open a conversation.» · (стр. 6)
+
+### Сохранять поисковые запросы · Сохраняйте настроенные фильтры поиска в Sales Navigator, чтобы не тратить время на их ручной ввод каждый день. · «...with Sales Navigator you can save searches so that you can jump straight into them. That time saved can then be invested into finding and contacting even more people...» · (стр. 6)
+
+### Обходить лимит InMail через Open Profiles · Ищите пользователей с типом профиля «Open Profiles», так как отправка сообщений им не расходует ваш стандартный лимит InMail. · «‘Open Profiles’ don't count towards your InMail limit, so keep an eye out for people who have this type of profile. This will allow you to send MORE InMails than usual...» · (стр. 6)
+
+### Использовать эмодзи, мемов и GIF только в ответ · Не отправляйте первыми мемы, гифки и эмодзи незнакомым людям — дождитесь, пока собеседник сам начнет их использовать. · «My rule of thumb with this is to let them use them first. You wouldn't want to use one of those only to find that they don't like them!» · (стр. 28)
+
+### Адаптировать стиль под мгновенные сообщения · Не используйте официальный стиль писем («Copy & Paste Email Message») для мессенджеров; сообщение должно быть чем-то средним между длинным email и коротким личным текстом. · «Some people are just using email style in instant messaging, which doesn't work... It's not an email, nor is it a text you'd send your best friend. It's something in between.» · (стр. 28)
+
+### Применять правило «Всегда на связи» (24/7) · Учитывайте, что современные клиенты активны круглосуточно, поэтому будьте готовы обрабатывать входящие запросы в нерабочее время. · «Our prospects and customers are active and contactable 24 hours a day, seven days a week...» · (стр. 28)
+
+### Использовать омниканальный подход (проход через «лабиринт») · Не полагайтесь только на один канал связи (например, только на холодные звонки); комбинируйте разные методы, так как у каждого клиента свой предпочитаемый способ контакта. · «The ‘Modern Day Prospecting Maze’ is there to help you understand the prospecting landscape out there now... you've got more opportunities to reach prospects.» · (стр. 29)
+
+### Следовать принципу ABC: Всегда на связи с новыми людьми (Always Be Connecting) · Ежедневно отправляйте простые, ненавязчивые запросы на добавление в контакты заданному количеству людей (например, по 5–10 человек в день). · «...when actually connecting with people, it's often worth making the effort to your LinkedIn connection request. Nothing too sales‐rich, just simple and light. To bring this tip to life set yourself a goal to connect with X amount of new people every single day.» · (стр. 29)
+
+### Следовать принципу ABC: Всегда создавать контент (Always Be Creating Content) · Публикуйте экспертный контент, отражающий ваши личные мысли, знания и опыт (а не прямую рекламу товара), чтобы привлекать людей на свой профиль. · «Your content shouldn't be about your product, but should be about YOU and your thoughts/knowledge/expertise. Create content such as posts, blogs, videos and images that offer value...» · (стр. 29)
+
+### Следовать принципу ABC: Всегда заводить разговоры (Always Be Conversations) · Используйте лайки и комментарии под вашим контентом как повод написать человеку в мессенджер и перевести интерес в реальный диалог. · «When you share great content, and you get likes and comments, use it to start a conversation via messenger. It might be a thank‐you or an opportunity to discuss the topic further.» · (стр. 29)
+
+### Следовать принципу ABC: Быть последовательным (Always Be Consistent) · Выделяйте в календаре фиксированное время каждый день (например, по 15–30 минут несколько раз в день) исключительно на социальные продажи и коммуникации. · «Set time every single day to do social selling activities. It could be 15–30 minutes at the start of the day to connect with people, send messages and write a post.» · (стр. 29)
