@@ -1,0 +1,8 @@
+# Задание C (Sonnet). Приёмы второго читателя (Gemini) по темам 11 Обучение, 07 Аналитика, 05 Продажи — что нового для неё
+Цель: из приёмов Gemini по этим книгам отобрать до 12 новых по каждой теме (36 всего), которых нет в наших скиллах, для одного человека: учится сама (Python, английский, Claude), работает с таблицами/данными, ведёт переговоры и продаёт (ИП, заказчики, поставщики).
+Файлы:
+- Gemini: C:\Users\User\knigi_kupleno\pereskaz_gemini2\*.md, только книги: 11 = a_mind_for_numbers, second_brain, fluent_forever, make_it_stick, moonwalking_einstein, peak_ericsson, ultralearning; 07 = lean_analytics, storytelling_data_makeovers, minto_pyramid; 05 = ask_for_it, challenger_sale, million_dollar_consulting, never_split_difference, Persuasion*, pitch_anything, mom_test, spin_fieldbook, prodazhi_b2b_kolotilov, The_Ultimate_LinkedIn_Sales. Читать Grep-ом по "^### " с -A 3.
+- Наше: C:\Users\User\.claude\skills\kak-uchitsya\ (SKILL.md, references), C:\Users\User\.claude\skills\dogovorennosti\ (SKILL.md, references), C:\Users\User\.claude\skills\knowledge-library\SKILL.md, C:\Users\User\.claude\CLAUDE.md.
+Результат: C:\Users\User\knigi_kupleno\SRAVNENIE_11_07_05_2510.md по-русски: три раздела (11, 07, 05); в каждом «Уже есть у нас» (до 8 строк: приём → где) и «Новое, отобрано» (до 12 строк: Название · что делать · книга, стр. · куда вписать). В конце «просмотрено файлов N из M», «сомнительное у Gemini» (до 5, с причиной).
+Нового нет — писать «нового нет», не придумывать. Файлы скиллов и CLAUDE.md не править.
+Потолок: 40 действий; застрял — стоп и доложить. Итог для неё — на «ты», коротко.
