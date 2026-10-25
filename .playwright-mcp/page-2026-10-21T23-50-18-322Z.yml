@@ -1,0 +1,45 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 26 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 1/60 мин
+      - generic [ref=e102]: комбо ×2
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e103]:
+      - generic [ref=e104]: Business Benchmark Pre-intermediate · юнит 1 · 🛒 Маркетплейсы
+      - generic [ref=e105]: 5 / 24
+    - button "🎨 Нарисовать картинку к фразе (ИИ)" [ref=e109] [cursor=pointer]
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - text: "Нужно сказать: «Моя работа — ...»"
+        - generic [ref=e112]: чат
+      - generic [ref=e113]:
+        - button "My job is to ..." [disabled] [ref=e114] [cursor=pointer]
+        - button "What do you like best about your job?" [disabled] [ref=e115] [cursor=pointer]
+        - button "What qualities does a PA need?" [disabled] [ref=e116] [cursor=pointer]
+        - button "What kind of atmosphere do you work in?" [disabled] [ref=e117] [cursor=pointer]
+    - generic [ref=e118]:
+      - text: ✅ Верно! +6
+      - generic [ref=e119]:
+        - text: My job is to find new suppliers on 1688.
+        - button "🔊" [ref=e120] [cursor=pointer]
+      - generic [ref=e121]: Моя работа — искать новых поставщиков на 1688.
+      - group [ref=e122]:
+        - 'generic "📘 Почему так: am / is / are — «быть» (часто пропадает в русском)" [ref=e123] [cursor=pointer]'
+      - generic [ref=e124]:
+        - button "🎲 Это было наугад" [disabled] [ref=e125] [cursor=pointer]
+        - text: "записала: проверим завтра и ещё несколько раз позже"
+      - button "Дальше ➜" [ref=e126] [cursor=pointer]
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"

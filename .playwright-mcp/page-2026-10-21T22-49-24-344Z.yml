@@ -1,0 +1,60 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 122 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 6/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e66]:
+      - generic [ref=e67]: Business Benchmark Pre-intermediate · юнит 1 · 🛒 Маркетплейсы
+      - generic [ref=e68]: 3 / 27
+    - generic [ref=e71]:
+      - img "invoice" [ref=e72]
+      - generic [ref=e73]:
+        - 'link "Фото: Paid bill for coffee" [ref=e74] [cursor=pointer]':
+          - /url: https://commons.wikimedia.org/wiki/File:Paid_bill_for_coffee.jpg
+        - text: ", Kritzolina · CC BY-SA 4.0"
+        - button "🔄 другая" [ref=e75] [cursor=pointer]
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - text: Что значит invoice
+        - button "🔊" [ref=e78] [cursor=pointer]
+        - text: "?"
+        - generic [ref=e79]: The supplier sent the invoice for 500 skirts.
+      - generic [ref=e80]:
+        - button "делать заметки" [disabled] [ref=e81] [cursor=pointer]
+        - button "счёт, инвойс" [disabled] [ref=e82] [cursor=pointer]
+        - button "материалы, запасы" [disabled] [ref=e83] [cursor=pointer]
+        - button "директор по продажам" [disabled] [ref=e84] [cursor=pointer]
+    - generic [ref=e85]:
+      - text: ❌ Не совсем
+      - generic [ref=e86]:
+        - text: "Правильно: счёт, инвойс"
+        - button "🔊" [ref=e87] [cursor=pointer]
+      - generic [ref=e88]:
+        - text: The supplier sent the invoice for 500 skirts.
+        - button "🔊" [ref=e89] [cursor=pointer]
+      - generic [ref=e90]: Поставщик прислал счёт на 500 юбок.
+      - group [ref=e91]:
+        - 'generic "📘 Почему так: Порядок слов: кто → действие → что → где → когда" [ref=e92] [cursor=pointer]'
+        - generic [ref=e93]: "👉 Проверь порядок: сначала кто, потом действие, дальше что / где / когда — так строится почти каждая английская фраза."
+        - generic [ref=e94]: "Правило: В английском порядок строгий: подлежащее (кто) → глагол (действие) → что/кого → где → когда. We ship orders to the US every week. Переставлять слова, как в русском, нельзя: от порядка зависит смысл."
+        - generic [ref=e95]:
+          - text: We send samples to clients every Monday.
+          - button "🔊" [ref=e96] [cursor=pointer]
+        - generic [ref=e97]: Мы отправляем образцы клиентам каждый понедельник.
+      - generic [ref=e98]:
+        - text: "✍ Своё предложение с этим словом про твою работу (по желанию, +5 очков):"
+        - textbox [ref=e99]
+      - button "Дальше ➜" [active] [ref=e100] [cursor=pointer]

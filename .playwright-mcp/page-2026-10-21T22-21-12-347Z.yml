@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 53 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 1/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e160]:
+      - generic [ref=e161]: Essential Grammar in Use · юнит 1 · 🛒 Маркетплейсы
+      - generic [ref=e162]: 27 / 31
+    - generic [ref=e165]:
+      - generic [ref=e166]:
+        - text: "Нужно сказать: «Я продавец на Wildberries.»"
+        - generic [ref=e167]: чат
+      - generic [ref=e168]:
+        - button "Our warehouse is in Moscow." [ref=e169] [cursor=pointer]
+        - button "I'm busy now, so I'll call you later." [ref=e170] [cursor=pointer]
+        - button "Could you send me some photos?" [ref=e171] [cursor=pointer]
+        - button "I'm a seller on Wildberries." [ref=e172] [cursor=pointer]
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"

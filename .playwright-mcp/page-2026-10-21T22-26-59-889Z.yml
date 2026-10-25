@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e6]: 65 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 3/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e229]:
+      - generic [ref=e230]: ✉️ Письмо рекрутеру из США
+      - generic [ref=e231]: 1 / 25
+    - generic [ref=e233]:
+      - generic [ref=e234]: ✉️ Честно про английский.
+      - generic [ref=e236]:
+        - button "My English is pre-intermediate, and I'm improving it every day. I work well in writing." [ref=e237] [cursor=pointer]
+        - button "I speak English bad." [ref=e238] [cursor=pointer]
+        - button "My English is fluent." [ref=e239] [cursor=pointer]
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"

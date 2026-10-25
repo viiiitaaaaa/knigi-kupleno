@@ -1,0 +1,41 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 206 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 20/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e58]:
+      - generic [ref=e59]: 🗣 Business Benchmark Pre-intermediate · юнит 1
+      - generic [ref=e60]: 1 / 10
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - text: "🗣 Скажи по-английски вслух:"
+        - generic [ref=e64]: Я отвечаю за ...
+      - paragraph [ref=e65]: 🎙 пробел — говори по-английски, пробел ещё раз — текст встанет в поле и игра проверит (Esc — отмена).
+      - textbox "Пробел — сказать голосом (или напечатай)" [active] [ref=e66]
+      - generic [ref=e71]:
+        - generic [ref=e114]: "🙈 Фраза спрятана, правило осталось — скажи по памяти, опираясь на него. Осталось попыток: 2."
+        - group [ref=e103]:
+          - 'generic "📘 Почему так: am / is / are — «быть» (часто пропадает в русском)" [ref=e104] [cursor=pointer]'
+          - generic [ref=e105]: 👉 Здесь по-русски глагола нет («я — …», «это — …»), а по-английски без am / is / are нельзя.
+          - generic [ref=e106]: "Правило: По-русски говорим «я менеджер», «цена высокая» — без глагола. По-английски глагол be нужен всегда: I am (I'm) a manager. The price is high. We are (we're) ready. Вопрос — be вперёд: Is it ready?"
+          - generic [ref=e107]:
+            - text: I'm a marketplace manager. Our prices are low.
+            - button "🔊" [ref=e108] [cursor=pointer]
+          - generic [ref=e109]: Я менеджер маркетплейсов. Наши цены низкие.
+      - generic [ref=e67]:
+        - button "Проверить" [ref=e68] [cursor=pointer]
+        - button "💡 Подсказка" [ref=e69] [cursor=pointer]
+        - button "Показать ответ" [ref=e70] [cursor=pointer]

@@ -1,0 +1,39 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 134 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 8/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e52]:
+      - generic [ref=e53]: "📞 Созвон с заказчиком: ИИ-автоматизация продаж"
+      - generic [ref=e54]: 1 / 25
+    - generic [ref=e56]:
+      - generic [ref=e57]: "📞 Спроси: «Какая у вас сейчас самая большая проблема с продажами?»"
+      - generic [ref=e59]: Нажимай слова по порядку…
+      - generic [ref=e61]:
+        - button "your" [ref=e62] [cursor=pointer]
+        - button "problem" [ref=e63] [cursor=pointer]
+        - button "biggest" [ref=e64] [cursor=pointer]
+        - button "What" [ref=e65] [cursor=pointer]
+        - button "is" [ref=e66] [cursor=pointer]
+        - button "sales" [ref=e67] [cursor=pointer]
+        - button "most" [ref=e68] [cursor=pointer]
+        - button "now" [ref=e69] [cursor=pointer]
+        - button "with" [ref=e70] [cursor=pointer]
+        - button "big" [ref=e71] [cursor=pointer]
+        - button "right" [ref=e72] [cursor=pointer]
+      - generic [ref=e73]:
+        - button "Проверить" [ref=e74] [cursor=pointer]
+        - button "Сбросить" [ref=e75] [cursor=pointer]

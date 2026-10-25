@@ -1,0 +1,59 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 206 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 20/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e58]:
+      - generic [ref=e59]: 🗣 Business Benchmark Pre-intermediate · юнит 1
+      - generic [ref=e60]: 1 / 10
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - text: "🗣 Скажи по-английски вслух:"
+        - generic [ref=e64]: Я отвечаю за ...
+      - paragraph [ref=e65]: 🎙 пробел — говори по-английски, пробел ещё раз — текст встанет в поле и игра проверит (Esc — отмена).
+      - textbox "Пробел — сказать голосом (или напечатай)" [active] [ref=e66]
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - text: "Я услышала: «hello world test» — 0 %.Зелёное — прозвучало, красное — пропущено, волнистое — сказано другое слово:"
+          - generic [ref=e73]: I'm responsible for
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - 'heading "📕 Разбор: почему так правильно" [level=4] [ref=e76]'
+            - generic [ref=e77]:
+              - generic [ref=e78]: I'm — ты сказала «hello»
+              - generic [ref=e79]: "👉 I'm = I am, «я есть». Говорим о себе: I'm responsible — я отвечаю. Правило: «быть какой» (responsible, ready, busy) — всегда с am/is/are. Запомни: I'm + описание себя."
+            - generic [ref=e80]:
+              - generic [ref=e81]: responsible — ты сказала «world»
+              - generic [ref=e82]: "👉 responsible — «ответственный, отвечающий за что-то». Слово длинное, но частое в вакансиях и резюме. Пример: responsible for orders — отвечаю за заказы. Запомни: responsible всегда идёт в паре с for."
+            - generic [ref=e83]:
+              - generic [ref=e84]: for — ты сказала «test»
+              - generic [ref=e85]: "👉 for — «за». По-русски «отвечать ЗА что-то», и по-английски тоже for: responsible for sales. Правило: после responsible всегда for, а дальше то, за что отвечаешь (слово или глагол с -ing). Запомни: responsible for, не of и не on."
+              - generic [ref=e86]: "Правило (for — «для, на срок»): Говорит «для кого/чего» или «на какой срок»: for clients, for two weeks. Не путай с since: for — сколько длится, since — с какого момента.We sell this dress for women. — Мы продаём это платье для женщин.Запомни: for = для; for + срок (for 3 days)."
+          - group [ref=e87]:
+            - 'generic "📘 Почему так: am / is / are — «быть» (часто пропадает в русском)" [ref=e88] [cursor=pointer]'
+            - generic [ref=e89]: 👉 Здесь по-русски глагола нет («я — …», «это — …»), а по-английски без am / is / are нельзя.
+            - generic [ref=e90]: "Правило: По-русски говорим «я менеджер», «цена высокая» — без глагола. По-английски глагол be нужен всегда: I am (I'm) a manager. The price is high. We are (we're) ready. Вопрос — be вперёд: Is it ready?"
+            - generic [ref=e91]:
+              - text: I'm a marketplace manager. Our prices are low.
+              - button "🔊" [ref=e92] [cursor=pointer]
+            - generic [ref=e93]: Я менеджер маркетплейсов. Наши цены низкие.
+        - generic [ref=e94]:
+          - generic [ref=e95]: "Изучи фразу и правило, потом нажми «🙈 Спрятать» — фраза уйдёт, правило останется. Осталось попыток: 2."
+          - button "🙈 Спрятать фразу и сказать по памяти" [ref=e97] [cursor=pointer]
+      - generic [ref=e67]:
+        - button "Проверить" [ref=e68] [cursor=pointer]
+        - button "💡 Подсказка" [ref=e69] [cursor=pointer]
+        - button "Показать ответ" [ref=e70] [cursor=pointer]

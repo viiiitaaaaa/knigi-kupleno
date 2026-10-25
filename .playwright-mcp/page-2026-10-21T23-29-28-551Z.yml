@@ -1,0 +1,49 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 206 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 20/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e58]:
+      - generic [ref=e59]: 🗣 Business Benchmark Pre-intermediate · юнит 1
+      - generic [ref=e60]: 1 / 10
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - text: "🗣 Скажи по-английски вслух:"
+        - generic [ref=e64]: Я ... в компании ...
+      - paragraph [ref=e65]: 🎙 пробел — говори по-английски, пробел ещё раз — текст встанет в поле и игра проверит (Esc — отмена).
+      - textbox "Пробел — сказать голосом (или напечатай)" [active] [ref=e66]
+      - generic [ref=e71]:
+        - text: "Я услышала: «wrong words here» — 0 %.Зелёное — прозвучало, красное — пропущено, волнистое — сказано другое слово:"
+        - generic [ref=e89]: I'm the at
+        - generic [ref=e90]:
+          - 'heading "📕 Разбор: почему так правильно" [level=4] [ref=e91]'
+          - generic [ref=e92]:
+            - generic [ref=e93]: I'm — ты сказала «wrong»
+            - generic [ref=e94]: "👉 I'm = I am, «я есть». Так называют свою должность или роль: I'm the manager — я менеджер. Правило: в английском фраза «кто я» обязательно с глаголом am/is/are, а по-русски мы его пропускаем. Запомни: I'm + кто я."
+          - generic [ref=e95]:
+            - generic [ref=e96]: the — ты сказала «words»
+            - generic [ref=e97]: "👉 the — перед названием должности или отдела: речь об одной конкретной, понятной обоим (the Sales department, the manager). Правило: единственный и понятный собеседнику → the. По-русски артикля нет, поэтому его легко забыть. Запомни: должность или отдел → the."
+            - generic [ref=e98]: "Правило (the — «тот самый»): Ставим, когда собеседнику понятно, о каком предмете речь: он уже был упомянут или он один такой. Русские часто его пропускают.Please check the invoice. — Пожалуйста, проверьте инвойс (тот, что мы обсуждали).Запомни: «тот самый, понятно какой» — the."
+          - generic [ref=e99]:
+            - generic [ref=e100]: at — ты сказала «here»
+            - generic [ref=e101]: "👉 at — «в, на», когда место работы называем как точку на карте: at Ozon, at a company. Правило: где ты работаешь (компания) → at; in — это «внутри» (in the office — в офисе). Запомни: работаю at компании."
+            - generic [ref=e102]: "Правило (at — «в точке, в точное время»): Для точного времени и места-точки: at 5 pm, at the office, at the warehouse. Не путай: in the city, но at the office.Let's meet at 3 pm at the office. — Давайте встретимся в 15:00 в офисе.Запомни: at — точка: at 5 pm, at work."
+        - generic [ref=e103]: "Изучи, потом нажми «🙈 Спрятать и сказать по памяти». Осталось попыток: 1."
+        - button "🙈 Спрятать и сказать по памяти" [ref=e105] [cursor=pointer]
+      - generic [ref=e67]:
+        - button "Проверить" [ref=e68] [cursor=pointer]
+        - button "💡 Подсказка" [ref=e69] [cursor=pointer]
+        - button "Показать ответ" [ref=e70] [cursor=pointer]

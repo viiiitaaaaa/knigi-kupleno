@@ -1,0 +1,48 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 0 очков
+      - generic [ref=e7]: 🔥 0 дн.
+      - generic [ref=e8]: ⏱ 0/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - heading "Привет, Вита! 👋" [level=2] [ref=e21]
+      - paragraph [ref=e22]: "Сегодня: 0 из 60 минут, 0 очков. На повторение ждут: 0."
+      - button "▶ Урок дня — всё по порядку (≈ 1 час)" [ref=e24] [cursor=pointer]
+      - paragraph [ref=e25]: "Урок сам собирает всё по порядку: повтор → сценка из работы → новое из книги «Business Benchmark Pre-intermediate» → на слух → вслух → работа над ошибками. Выбирать ничего не нужно."
+      - button "Только короткая тренировка (20 заданий)" [ref=e26] [cursor=pointer]
+      - button "🌙 Перед сном — 5 минут на трудное" [ref=e27] [cursor=pointer]
+      - paragraph [ref=e28]: "💡 Лучше два захода по ~25–30 минут (утром и вечером), чем час подряд: перерывы и сон закрепляют (ориентир, не правило)."
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: "0"
+        - text: выучено (верно в разные дни, с интервалами)
+      - generic [ref=e32]:
+        - generic [ref=e33]: —
+        - text: "точность повторов за 3 дня (ориентир книги: 90–95 %)"
+      - generic [ref=e34]:
+        - generic [ref=e35]: 0/1656
+        - text: начато в текущей книге
+      - generic [ref=e36]:
+        - generic [ref=e37]: 0/11
+        - text: сценок пройдено
+    - generic [ref=e38]:
+      - heading "Что будет в уроке" [level=3] [ref=e39]
+      - list [ref=e40]:
+        - listitem [ref=e41]: "📦 Сценка из работы: «Первое письмо поставщику на 1688» — 7 заданий"
+        - listitem [ref=e42]: 🗣 Скажи вслух фразы этой сценки (Handy или микрофон) — 4 задания
+        - listitem [ref=e43]: "📚 Новое из книги «Business Benchmark Pre-intermediate» и грамматика Murphy: сначала попробуй сама, объяснение — после ответа — 14 заданий"
+        - listitem [ref=e44]: "🎧 На слух: послушай и пойми — 6 заданий"
+        - listitem [ref=e45]: 🗣 Скажи вслух фразы из книги — 4 задания
+      - paragraph [ref=e46]: Прошла всё, а час не набрался — урок сам соберёт следующий круг. Ушла посреди — продолжишь с того же места.

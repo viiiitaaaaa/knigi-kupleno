@@ -1,0 +1,49 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 182 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 14/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - heading "Привет, Вита! 👋" [level=2] [ref=e22]
+      - paragraph [ref=e23]: "Сегодня: 14 из 60 минут, 182 очков. На повторение ждут: 0."
+      - button "▶ Урок дня — всё по порядку (≈ 1 час)" [ref=e26] [cursor=pointer]
+      - paragraph [ref=e27]: "Урок сам собирает всё по порядку: повтор → сценка из работы → новое из книги «Business Benchmark Pre-intermediate» → на слух → вслух → работа над ошибками. Выбирать ничего не нужно."
+      - button "Только короткая тренировка (20 заданий)" [ref=e28] [cursor=pointer]
+      - button "🌙 Перед сном — 5 минут на трудное" [ref=e29] [cursor=pointer]
+      - paragraph [ref=e30]: "💡 Лучше два захода по ~25–30 минут (утром и вечером), чем час подряд: перерывы и сон закрепляют (ориентир, не правило)."
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]: "0"
+        - text: выучено (верно в разные дни, с интервалами)
+      - generic [ref=e34]:
+        - generic [ref=e35]: —
+        - text: "точность повторов за 3 дня (ориентир книги: 90–95 %)"
+      - generic [ref=e36]:
+        - generic [ref=e37]: 22/1656
+        - text: начато в текущей книге
+      - generic [ref=e38]:
+        - generic [ref=e39]: 0/11
+        - text: сценок пройдено
+    - generic [ref=e40]:
+      - heading "Что будет в уроке" [level=3] [ref=e41]
+      - list [ref=e42]:
+        - listitem [ref=e43]: "🔁 Разминка: повтор того, что пора вспомнить — 15 заданий"
+        - listitem [ref=e44]: "🛠 Мои ошибки: упражнения по словам, где ты ошиблась — 8 заданий"
+        - listitem [ref=e45]: "📦 Сценка из работы: «Первое письмо поставщику на 1688» — 7 заданий"
+        - listitem [ref=e46]: 🗣 Скажи вслух фразы этой сценки (Handy или микрофон) — 4 задания
+        - listitem [ref=e47]: "🎧 На слух: послушай и пойми — 6 заданий"
+        - listitem [ref=e48]: 🗣 Скажи вслух фразы из книги — 4 задания
+      - paragraph [ref=e49]: Прошла всё, а час не набрался — урок сам соберёт следующий круг. Ушла посреди — продолжишь с того же места.

@@ -1,0 +1,72 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 188 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 15/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e73]:
+      - generic [ref=e74]: 🛍️ Покупатель из США пишет в чат
+      - generic [ref=e75]: 7 / 30
+    - generic [ref=e78]:
+      - generic [ref=e79]: "🛍️ Покупатель: «Hi! Does this skirt run small?» Что он спрашивает?"
+      - generic [ref=e81]:
+        - button "Can the skirt be used for running?" [disabled] [ref=e82] [cursor=pointer]
+        - button "Is the skirt smaller than the usual size?" [disabled] [ref=e83] [cursor=pointer]
+        - button "Is the skirt cheap?" [disabled] [ref=e84] [cursor=pointer]
+    - generic [ref=e85]:
+      - text: ❌ Не совсем
+      - generic [ref=e86]:
+        - text: "Правильно: Is the skirt smaller than the usual size?"
+        - button "🔊" [ref=e87] [cursor=pointer]
+      - generic [ref=e88]: run здесь не про бег. → run small = маломерит.
+      - generic [ref=e89]:
+        - 'heading "📕 Разбор: почему так правильно" [level=4] [ref=e90]'
+        - generic [ref=e91]:
+          - generic [ref=e92]: Is — ты сказала «can»
+          - generic [ref=e93]: "👉 Is — «есть». Вопрос про skirt (одна юбка) → Is. Запомни: одна → is."
+          - generic [ref=e94]: "Правило (is — «есть» (он, она, оно)): В английском глагол-связка нужен всегда: the price is low. Русские его пропускают («цена низкая»). Для he/she/it и одного предмета — is.The price is very good. — Цена очень хорошая.Запомни: без is/are в английском фразы не бывает."
+        - generic [ref=e95]:
+          - generic [ref=e96]: smaller — ты сказала «be»
+          - generic [ref=e97]: "👉 smaller — «меньше». small + er → smaller. Сравнительная степень. Запомни: короткое слово + -er = «более»."
+        - generic [ref=e98]:
+          - generic [ref=e99]: than — ты сказала «used»
+          - generic [ref=e100]: "👉 than — «чем». Сравниваем: меньше, ЧЕМ обычный. Запомни: than — после сравнения."
+          - generic [ref=e101]: "Правило (than — «чем» (в сравнении)): Только после сравнения: cheaper than, more than. Русские путают then и than. Than — для сравнения, then — «потом».This price is lower than last month. — Эта цена ниже, чем в прошлом месяце.Запомни: сравнение — than; потом — then."
+        - generic [ref=e102]:
+          - generic [ref=e103]: the — ты сказала «for»
+          - generic [ref=e104]: "👉 the — «обычного». Размер известен всем — стандартный. Запомни: the usual size."
+          - generic [ref=e105]: "Правило (the — «тот самый»): Ставим, когда собеседнику понятно, о каком предмете речь: он уже был упомянут или он один такой. Русские часто его пропускают.Please check the invoice. — Пожалуйста, проверьте инвойс (тот, что мы обсуждали).Запомни: «тот самый, понятно какой» — the."
+        - generic [ref=e106]:
+          - generic [ref=e107]: usual — ты сказала «running»
+          - generic [ref=e108]: "👉 usual — «обычный, привычный». Запомни: usual — привычный."
+        - generic [ref=e109]:
+          - generic [ref=e110]: size? — пропущено
+          - generic [ref=e111]: "👉 size? — «размер». Один размер → без -s. Вопросительный знак: в английском вопрос заканчивается на ?. Запомни: usual size — привычный, стандартный размер."
+      - group [ref=e112]:
+        - 'generic "📘 Почему так: Сравнение: cheaper, more expensive, the best" [ref=e113] [cursor=pointer]'
+        - generic [ref=e114]: "👉 Сравниваем два: короткое слово + -er, длинное — more."
+        - generic [ref=e115]: "Правило: Короткое слово: + -er (cheaper, faster), самое — the + -est (the cheapest). Длинное: more / the most (more expensive). Сравниваем с than: cheaper than."
+        - generic [ref=e116]:
+          - text: Your price is higher than the other factory's.
+          - button "🔊" [ref=e117] [cursor=pointer]
+        - generic [ref=e118]: Ваша цена выше, чем у другой фабрики.
+      - generic [ref=e120]:
+        - text: 📷
+        - link "2010 Run to the Sun Fashion Show in Anchorage Alaska 16" [ref=e121] [cursor=pointer]:
+          - /url: https://commons.wikimedia.org/wiki/File:2010_Run_to_the_Sun_Fashion_Show_in_Anchorage_Alaska_16.jpg
+        - text: ", Frank Kovalchek from Anchorage, Alaska, · CC BY 2.0 — может не совпасть со смыслом"
+        - button "🔄 другая" [ref=e122] [cursor=pointer]
+        - button "🎨 нарисовать ИИ" [ref=e123] [cursor=pointer]
+      - button "Дальше ➜" [active] [ref=e124] [cursor=pointer]

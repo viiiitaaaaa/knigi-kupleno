@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 10 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 0/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e86]:
+      - generic [ref=e87]: Essential Grammar in Use
+      - generic [ref=e88]: 2 / 22
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - group [ref=e93]:
+          - 'generic "💡 Подсказка: правило «Short forms (Сокращения: I''m, he''s, don''t)» — сначала попробуй вспомнить сама (с подсказкой повторим завтра)" [ref=e94] [cursor=pointer]'
+          - text: "В речи и письме am/is/are/have/has/will/would сливаются с местоимением: I am - I'm, it is - it's, we will - we'll, do not - don't. 's может быть is или has. В конце ответа сокращать нельзя: Yes, I am (не Yes, I'm)."
+        - text: "Выбери слово для пропуска:"
+        - generic [ref=e95]: ___ (I am) a seller on Wildberries.
+        - generic [ref=e96]: Я продавец на Wildberries.
+      - generic [ref=e97]:
+        - button "We'll" [ref=e98] [cursor=pointer]
+        - button "I'm" [ref=e99] [cursor=pointer]
+        - button "It's" [ref=e100] [cursor=pointer]
+        - button "doesn't" [ref=e101] [cursor=pointer]
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"

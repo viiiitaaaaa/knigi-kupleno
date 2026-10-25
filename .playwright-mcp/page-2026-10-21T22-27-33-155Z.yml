@@ -1,0 +1,44 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e6]: 82 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 4/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [active] [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - heading "📈 Журнал" [level=2] [ref=e252]
+    - 'generic "2026-10-22: 4 мин" [ref=e254]': "22"
+    - paragraph [ref=e257]: Минуты за последние 14 дней. Цель — 60 минут в день.
+    - heading "Награды" [level=3] [ref=e258]
+    - generic [ref=e259]:
+      - generic [ref=e260]: 🌱 Первый шаг
+      - generic [ref=e261]: 🔥 Комбо ×5
+      - generic [ref=e262]: ⚡ Комбо ×15
+      - generic [ref=e263]: 📅 3 дня подряд
+      - generic [ref=e264]: 🏅 Неделя подряд
+      - generic [ref=e265]: 🏆 Месяц подряд
+      - generic [ref=e266]: ⏱ Час английского за день
+      - generic [ref=e267]: 🎬 3 сценки на ★★★
+      - generic [ref=e268]: 🎭 Все сценки пройдены
+      - generic [ref=e269]: 📚 100 карточек выучено
+      - generic [ref=e270]: 🧠 500 карточек выучено
+      - generic [ref=e271]: 👑 Уровень 5
+    - heading "Как игра учит (по книгам)" [level=3] [ref=e272]
+    - group [ref=e273]:
+      - generic "Какие приёмы из каких книг (нажми)" [ref=e274] [cursor=pointer]
+    - heading "Сохранение" [level=3] [ref=e275]
+    - paragraph [ref=e276]: Прогресс хранится в этом браузере. Чтобы перенести на телефон или не потерять — сохрани файл и загрузи его там.
+    - generic [ref=e277]:
+      - button "⬇ Сохранить прогресс в файл" [ref=e278] [cursor=pointer]
+      - generic [ref=e279] [cursor=pointer]: ⬆ Загрузить из файла
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"

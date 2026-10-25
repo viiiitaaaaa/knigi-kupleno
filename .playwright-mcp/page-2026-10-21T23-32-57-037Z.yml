@@ -1,0 +1,25 @@
+- generic [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - generic [ref=f1e4]: Ур. 1 · Стажёр
+      - generic [ref=f1e6]: 0 очков
+      - generic [ref=f1e7]: 🔥 0 дн.
+      - generic [ref=f1e8]: ⏱ 0/60 мин
+    - navigation [ref=f1e9]:
+      - button "🏠 Главная" [ref=f1e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=f1e11] [cursor=pointer]
+      - button "📚 Книги" [ref=f1e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=f1e13] [cursor=pointer]
+      - button "🗣 Говорить" [active] [ref=f1e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=f1e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=f1e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=f1e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=f1e18] [cursor=pointer]
+  - main [ref=f1e19]:
+    - generic [ref=f1e48]:
+      - heading "🗣 Говорить" [level=2] [ref=f1e49]
+      - paragraph [ref=f1e50]: Видишь фразу по-русски — говоришь её по-английски в микрофон. Игра слышит и показывает, какие слова прозвучали.
+      - paragraph [ref=f1e51]: 🎙 пробел — говори по-английски, пробел ещё раз — текст встанет в поле и игра проверит (Esc — отмена). Говори спокойно, полным предложением. Нужен интернет; без него — Handy (зажми правый Alt).
+      - button "▶ Фразы из сценок (моя работа)" [ref=f1e52] [cursor=pointer]
+      - button "▶ Фразы из книги" [ref=f1e53] [cursor=pointer]
+      - paragraph [ref=f1e54]: "Хочешь живой разговор — скажи мне во вкладке: «давай поговорим по-английски» (про собеседование, поставщика, клиента)."

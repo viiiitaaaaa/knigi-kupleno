@@ -1,0 +1,40 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 188 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 14/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e51]:
+      - generic [ref=e52]: "📞 Созвон с заказчиком: ИИ-автоматизация продаж"
+      - generic [ref=e53]: 4 / 28
+    - generic [ref=e56]:
+      - generic [ref=e57]: 📞 Начало созвона. Что сказать первым?
+      - generic [ref=e59]:
+        - button "Hi John, thanks for taking the time to talk today." [disabled] [ref=e60] [cursor=pointer]
+        - button "Hi John, thank you for take time." [disabled] [ref=e61] [cursor=pointer]
+        - button "Hello. Tell me what you want." [disabled] [ref=e62] [cursor=pointer]
+    - generic [ref=e63]:
+      - text: ✅ Верно! +6
+      - generic [ref=e64]: Благодаришь за время — тёплое начало.
+      - group [ref=e65]:
+        - 'generic "📘 Почему так: глагол с -ing после предлога и некоторых слов" [ref=e66] [cursor=pointer]'
+      - generic [ref=e68]:
+        - text: 📷
+        - link "Deb Haaland taking oath in 2019" [ref=e69] [cursor=pointer]:
+          - /url: https://commons.wikimedia.org/wiki/File:Deb_Haaland_taking_oath_in_2019.jpg
+        - text: ", Deb Haaland · Public domain — может не совпасть со смыслом"
+        - button "🔄 другая" [ref=e70] [cursor=pointer]
+        - button "🎨 нарисовать ИИ" [ref=e71] [cursor=pointer]
+      - button "Дальше ➜" [active] [ref=e72] [cursor=pointer]

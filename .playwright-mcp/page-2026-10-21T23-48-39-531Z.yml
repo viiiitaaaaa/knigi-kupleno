@@ -1,0 +1,37 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 0 очков
+      - generic [ref=e7]: 🔥 0 дн.
+      - generic [ref=e8]: ⏱ 0/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e48]:
+      - generic [ref=e49]: "⚠️ Жалоба поставщику: пришёл брак"
+      - generic [ref=e50]: 1 / 22
+    - generic [ref=e52]:
+      - generic [ref=e53]: ⚠️ «Во вложении фото брака».
+      - generic [ref=e55]: Нажимай слова по порядку…
+      - generic [ref=e57]:
+        - button "defects" [ref=e58] [cursor=pointer]
+        - button "find" [ref=e59] [cursor=pointer]
+        - button "Please" [ref=e60] [cursor=pointer]
+        - button "the" [ref=e61] [cursor=pointer]
+        - button "photos" [ref=e62] [cursor=pointer]
+        - button "of" [ref=e63] [cursor=pointer]
+        - button "attached" [ref=e64] [cursor=pointer]
+        - button "on" [ref=e65] [cursor=pointer]
+        - button "attach" [ref=e66] [cursor=pointer]
+      - generic [ref=e67]:
+        - button "Проверить" [ref=e68] [cursor=pointer]
+        - button "Сбросить" [ref=e69] [cursor=pointer]

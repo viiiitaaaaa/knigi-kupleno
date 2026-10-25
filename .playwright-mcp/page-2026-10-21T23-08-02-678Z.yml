@@ -1,0 +1,32 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 206 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 19/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e251]:
+      - generic [ref=e252]: 🗣 🔗 Сообщение в LinkedIn
+      - generic [ref=e253]: 20 / 37
+    - generic [ref=e256]:
+      - generic [ref=e257]:
+        - text: "🗣 Скажи по-английски вслух:"
+        - generic [ref=e258]: Привет, Сара, я видела твой пост про ИИ в e-commerce, он мне очень пригодился.
+        - generic [ref=e259]: "Ситуация: Первая строка."
+      - paragraph [ref=e260]: 🎙 пробел — говори по-английски, пробел ещё раз — текст встанет в поле и игра проверит (Esc — отмена).
+      - textbox "Пробел — сказать голосом (или напечатай)" [active] [ref=e261]
+      - generic [ref=e262]:
+        - button "Проверить" [ref=e263] [cursor=pointer]
+        - button "💡 Подсказка" [ref=e264] [cursor=pointer]
+        - button "Показать ответ" [ref=e265] [cursor=pointer]

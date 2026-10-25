@@ -1,0 +1,33 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 88 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 4/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e52]:
+      - generic [ref=e53]: 🔗 Сообщение в LinkedIn
+      - generic [ref=e54]: 1 / 25
+    - generic [ref=e56]:
+      - generic [ref=e57]: 🔗 Первая строка.
+      - generic [ref=e59]:
+        - button "Dear Sir, I want work." [disabled] [ref=e60] [cursor=pointer]
+        - button "Hi Sarah, I saw your post about AI in e-commerce and found it very useful." [disabled] [ref=e61] [cursor=pointer]
+        - button "Hi, give me a job please." [disabled] [ref=e62] [cursor=pointer]
+    - generic [ref=e63]:
+      - text: ✅ Верно! +6
+      - generic [ref=e64]: Конкретная причина, почему пишешь именно ей.
+      - group [ref=e65]:
+        - 'generic "📘 Почему так: Past Simple — прошедшее с точным временем" [ref=e66] [cursor=pointer]'
+      - button "Дальше ➜" [active] [ref=e67] [cursor=pointer]

@@ -1,0 +1,41 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]: Тренажёр переговоров
+    - generic [ref=e5]: Ситуации из жизни. Ты отвечаешь — тренажёр показывает приём, запрет и ход лучше.
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: "0"
+      - text: очки
+    - generic [ref=e9]:
+      - generic [ref=e10]: "0"
+      - text: дней подряд
+    - generic [ref=e11]:
+      - generic [ref=e12]: "0"
+      - text: на повторение
+  - generic [ref=e13]: Новичок 🌱 · до «Слушательница 👂» ещё 80
+  - generic [ref=e14]:
+    - 'button "▶ Играть: раунд из 8" [ref=e15] [cursor=pointer]'
+    - button "🔁 Повторить слабое (0)" [disabled] [ref=e16]
+    - button "💬 Живой разговор (3 хода)" [ref=e17] [cursor=pointer]
+    - 'button "🛡 Защита: узнай давление" [ref=e18] [cursor=pointer]'
+  - generic [ref=e19]: Тренировать одну книгу
+  - generic [ref=e20]:
+    - button "🎯 Восс освоено 0 из 11" [ref=e21] [cursor=pointer]:
+      - generic [ref=e22]: 🎯 Восс
+      - generic [ref=e23]: освоено 0 из 11
+    - button "💼 Вайс освоено 0 из 6" [ref=e24] [cursor=pointer]:
+      - generic [ref=e25]: 💼 Вайс
+      - generic [ref=e26]: освоено 0 из 6
+    - button "🎤 Клафф освоено 0 из 6" [ref=e27] [cursor=pointer]:
+      - generic [ref=e28]: 🎤 Клафф
+      - generic [ref=e29]: освоено 0 из 6
+    - button "👂 Тест мамы освоено 0 из 6" [ref=e30] [cursor=pointer]:
+      - generic [ref=e31]: 👂 Тест мамы
+      - generic [ref=e32]: освоено 0 из 6
+    - button "💬 Холл (НЛП) освоено 0 из 9" [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: 💬 Холл (НЛП)
+      - generic [ref=e35]: освоено 0 из 9
+  - generic [ref=e36]:
+    - button "📖 Приёмы" [ref=e37] [cursor=pointer]
+    - button "📓 Журнал" [ref=e38] [cursor=pointer]
+    - button "ℹ️ Как это работает" [ref=e39] [cursor=pointer]

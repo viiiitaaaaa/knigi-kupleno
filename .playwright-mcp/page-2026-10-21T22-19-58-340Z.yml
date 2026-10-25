@@ -1,0 +1,36 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 0 очков
+      - generic [ref=e7]: 🔥 0 дн.
+      - generic [ref=e8]: ⏱ 0/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e48]:
+      - generic [ref=e49]: "🎥 Начало созвона в Zoom: small talk"
+      - generic [ref=e50]: 1 / 22
+    - generic [ref=e52]:
+      - generic [ref=e53]: "🎥 Перейди к делу: «Давайте начнём с отчёта за прошлую неделю»."
+      - generic [ref=e55]: Нажимай слова по порядку…
+      - generic [ref=e57]:
+        - button "week's" [ref=e58] [cursor=pointer]
+        - button "starting" [ref=e59] [cursor=pointer]
+        - button "Let's" [ref=e60] [cursor=pointer]
+        - button "last" [ref=e61] [cursor=pointer]
+        - button "start" [ref=e62] [cursor=pointer]
+        - button "from" [ref=e63] [cursor=pointer]
+        - button "report" [ref=e64] [cursor=pointer]
+        - button "with" [ref=e65] [cursor=pointer]
+      - generic [ref=e66]:
+        - button "Проверить" [ref=e67] [cursor=pointer]
+        - button "Сбросить" [ref=e68] [cursor=pointer]

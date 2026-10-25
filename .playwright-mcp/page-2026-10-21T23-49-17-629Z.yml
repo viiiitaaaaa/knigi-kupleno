@@ -1,0 +1,44 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 10 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 0/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e48]:
+      - generic [ref=e49]: "⚠️ Жалоба поставщику: пришёл брак"
+      - generic [ref=e50]: 1 / 22
+    - generic [ref=e52]:
+      - generic [ref=e53]: ⚠️ «Во вложении фото брака».
+      - generic [ref=e55]:
+        - button "Please" [disabled] [ref=e71] [cursor=pointer]
+        - button "find" [disabled] [ref=e72] [cursor=pointer]
+        - button "attached" [disabled] [ref=e73] [cursor=pointer]
+        - button "photos" [disabled] [ref=e74] [cursor=pointer]
+        - button "of" [disabled] [ref=e75] [cursor=pointer]
+        - button "the" [disabled] [ref=e76] [cursor=pointer]
+        - button "defects" [disabled] [ref=e77] [cursor=pointer]
+      - generic [ref=e57]:
+        - button "on" [disabled] [ref=e78] [cursor=pointer]
+        - button "attach" [disabled] [ref=e79] [cursor=pointer]
+      - generic [ref=e67]:
+        - button "Проверить" [disabled] [ref=e68] [cursor=pointer]
+        - button "Сбросить" [disabled] [ref=e69] [cursor=pointer]
+    - generic [ref=e80]:
+      - text: ✅ Верно! +10
+      - group [ref=e81]:
+        - 'generic "📘 Почему так: Повелительное: глагол в начале — Send, Help yourself" [ref=e82] [cursor=pointer]'
+      - button "🎨 Нарисовать картинку к фразе (ИИ)" [ref=e84] [cursor=pointer]
+      - button "Дальше ➜" [active] [ref=e85] [cursor=pointer]
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"

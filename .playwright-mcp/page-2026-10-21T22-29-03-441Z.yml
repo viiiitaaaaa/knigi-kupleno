@@ -1,0 +1,45 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 94 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 4/60 мин
+      - generic [ref=e68]: комбо ×2
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e69]:
+      - generic [ref=e70]: Business Benchmark Pre-intermediate · юнит 1 · 🛒 Маркетплейсы
+      - generic [ref=e71]: 2 / 25
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - text: Что значит visitor
+        - button "🔊" [ref=e76] [cursor=pointer]
+        - text: "?"
+        - generic [ref=e77]: A visitor from Shenzhen arrives at our office today.
+      - generic [ref=e78]:
+        - button "укладываться в сроки" [disabled] [ref=e79] [cursor=pointer]
+        - button "рабочие отношения" [disabled] [ref=e80] [cursor=pointer]
+        - button "посетитель, гость" [disabled] [ref=e81] [cursor=pointer]
+        - button "техническая поддержка" [disabled] [ref=e82] [cursor=pointer]
+    - generic [ref=e83]:
+      - text: ✅ Верно! +6
+      - generic [ref=e84]:
+        - text: A visitor from Shenzhen arrives at our office today.
+        - button "🔊" [ref=e85] [cursor=pointer]
+      - generic [ref=e86]: Гость из Шэньчжэня приезжает в наш офис сегодня.
+      - group [ref=e87]:
+        - 'generic "📘 Почему так: Порядок слов: кто → действие → что → где → когда" [ref=e88] [cursor=pointer]'
+      - generic [ref=e89]:
+        - text: "✍ Своё предложение с этим словом про твою работу (по желанию, +5 очков):"
+        - textbox [active] [ref=e90]
+      - button "Дальше ➜" [ref=e91] [cursor=pointer]

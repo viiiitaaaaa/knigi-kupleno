@@ -1,0 +1,50 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - generic [ref=f1e4]: Ур. 2 · Ассистент
+      - generic [ref=f1e7]: 134 очков
+      - generic [ref=f1e8]: 🔥 1 дн.
+      - generic [ref=f1e9]: ⏱ 9/60 мин
+    - navigation [ref=f1e10]:
+      - button "🏠 Главная" [ref=f1e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=f1e12] [cursor=pointer]
+      - button "📚 Книги" [ref=f1e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=f1e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=f1e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=f1e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=f1e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=f1e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=f1e19] [cursor=pointer]
+  - main [ref=f1e20]:
+    - generic [ref=f1e21]:
+      - heading "Привет, Вита! 👋" [level=2] [ref=f1e22]
+      - paragraph [ref=f1e23]: "Сегодня: 9 из 60 минут, 134 очков. На повторение ждут: 0."
+      - button "▶ Урок дня — всё по порядку (≈ 1 час)" [ref=f1e26] [cursor=pointer]
+      - paragraph [ref=f1e27]: "Урок сам собирает всё по порядку: повтор → сценка из работы → новое из книги «Business Benchmark Pre-intermediate» → на слух → вслух → работа над ошибками. Выбирать ничего не нужно."
+      - button "Только короткая тренировка (20 заданий)" [ref=f1e28] [cursor=pointer]
+      - button "🌙 Перед сном — 5 минут на трудное" [ref=f1e29] [cursor=pointer]
+      - paragraph [ref=f1e30]: "💡 Лучше два захода по ~25–30 минут (утром и вечером), чем час подряд: перерывы и сон закрепляют (ориентир, не правило)."
+    - generic [ref=f1e31]:
+      - generic [ref=f1e32]:
+        - generic [ref=f1e33]: "0"
+        - text: выучено (верно в разные дни, с интервалами)
+      - generic [ref=f1e34]:
+        - generic [ref=f1e35]: —
+        - text: "точность повторов за 3 дня (ориентир книги: 90–95 %)"
+      - generic [ref=f1e36]:
+        - generic [ref=f1e37]: 19/1656
+        - text: начато в текущей книге
+      - generic [ref=f1e38]:
+        - generic [ref=f1e39]: 0/11
+        - text: сценок пройдено
+    - generic [ref=f1e40]:
+      - heading "Что будет в уроке" [level=3] [ref=f1e41]
+      - list [ref=f1e42]:
+        - listitem [ref=f1e43]: "🔁 Разминка: повтор того, что пора вспомнить — 15 заданий"
+        - listitem [ref=f1e44]: "🛠 Мои ошибки: упражнения по словам, где ты ошиблась — 8 заданий"
+        - listitem [ref=f1e45]: "📦 Сценка из работы: «Первое письмо поставщику на 1688» — 7 заданий"
+        - listitem [ref=f1e46]: 🗣 Скажи вслух фразы этой сценки (Handy или микрофон) — 4 задания
+        - listitem [ref=f1e47]: "📚 Новое из книги «Business Benchmark Pre-intermediate» и грамматика Murphy: сначала попробуй сама, объяснение — после ответа — 4 задания"
+        - listitem [ref=f1e48]: "🎧 На слух: послушай и пойми — 6 заданий"
+        - listitem [ref=f1e49]: 🗣 Скажи вслух фразы из книги — 4 задания
+      - paragraph [ref=f1e50]: Прошла всё, а час не набрался — урок сам соберёт следующий круг. Ушла посреди — продолжишь с того же места.

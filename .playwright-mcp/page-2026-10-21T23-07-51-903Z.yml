@@ -1,0 +1,104 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 206 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 19/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e166]:
+      - generic [ref=e167]: 📦 Первое письмо поставщику на 1688
+      - generic [ref=e168]: 19 / 36
+    - generic [ref=e171]:
+      - generic [ref=e172]: "📦 Скажи: «Меня зовут Вита, я продаю одежду на Wildberries и Ozon»."
+      - button "am" [disabled] [ref=e175] [cursor=pointer]
+      - generic [ref=e176]:
+        - button "My" [disabled] [ref=e177] [cursor=pointer]
+        - button "and" [disabled] [ref=e178] [cursor=pointer]
+        - button "Wildberries" [disabled] [ref=e179] [cursor=pointer]
+        - button "selling" [disabled] [ref=e180] [cursor=pointer]
+        - button "I" [disabled] [ref=e181] [cursor=pointer]
+        - button "Vita" [disabled] [ref=e182] [cursor=pointer]
+        - button "on" [disabled] [ref=e183] [cursor=pointer]
+        - button "Ozon" [disabled] [ref=e184] [cursor=pointer]
+        - button "sell" [disabled] [ref=e185] [cursor=pointer]
+        - button "is" [disabled] [ref=e186] [cursor=pointer]
+        - button "name" [disabled] [ref=e187] [cursor=pointer]
+        - button "and" [disabled] [ref=e188] [cursor=pointer]
+        - button "clothes" [disabled] [ref=e189] [cursor=pointer]
+      - generic [ref=e190]:
+        - button "Проверить" [disabled] [ref=e191] [cursor=pointer]
+        - button "Сбросить" [disabled] [ref=e192] [cursor=pointer]
+    - generic [ref=e193]:
+      - text: ❌ Не совсем
+      - generic [ref=e194]:
+        - text: "Правильно: My name is Vita and I sell clothes on Wildberries and Ozon"
+        - button "🔊" [ref=e195] [cursor=pointer]
+      - generic [ref=e196]:
+        - 'heading "📕 Разбор: почему так правильно" [level=4] [ref=e197]'
+        - generic [ref=e198]:
+          - generic [ref=e199]: My — ты сказала «am»
+          - generic [ref=e200]: "👉 My — «мой, моё». My name — «моё имя». Для «меня зовут» по-английски говорят не «я зовусь», а «моё имя есть». Запомни: I — «я», my — «мой»."
+        - generic [ref=e201]:
+          - generic [ref=e202]: name — пропущено
+          - generic [ref=e203]: "👉 name — «имя». Стоит сразу после my. Запомни: My name is... — «меня зовут...»."
+        - generic [ref=e204]:
+          - generic [ref=e205]: is — пропущено
+          - generic [ref=e206]: "👉 is — «есть». Буквально: «моё имя ЕСТЬ Вита». По-русски «есть» не говорим, по-английски глагол нужен всегда. Про name говорим is, не am. Запомни: name → is."
+          - generic [ref=e207]: "Правило (is — «есть» (он, она, оно)): В английском глагол-связка нужен всегда: the price is low. Русские его пропускают («цена низкая»). Для he/she/it и одного предмета — is.The price is very good. — Цена очень хорошая.Запомни: без is/are в английском фразы не бывает."
+        - generic [ref=e208]:
+          - generic [ref=e209]: Vita — пропущено
+          - generic [ref=e210]: 👉 Vita — твоё имя. Имена пишем с большой буквы. После is идёт само имя.
+        - generic [ref=e211]:
+          - generic [ref=e212]: and — пропущено
+          - generic [ref=e213]: "👉 and — «и». Соединяет две части: имя и занятие. Запомни: and — «и», две мысли в одной фразе."
+          - generic [ref=e214]: "Правило (and — «и»): Соединяет слова и части: price and quality. В перечислении из трёх запятые, and перед последним: price, quality, and delivery.We sell clothes and shoes. — Мы продаём одежду и обувь.Запомни: and — перед последним в списке."
+        - generic [ref=e215]:
+          - generic [ref=e216]: I — пропущено
+          - generic [ref=e217]: "👉 I — «я». Начинается новая часть: «я продаю». Подлежащее нужно снова, нельзя пропустить, как по-русски. Запомни: I — всегда с большой буквы."
+        - generic [ref=e218]:
+          - generic [ref=e219]: sell — пропущено
+          - generic [ref=e220]: "👉 sell — «продаю». После I — без -s: I sell. Sells — только he/she/it. Запомни: sell — продавать; sell clothes — продавать одежду."
+        - generic [ref=e221]:
+          - generic [ref=e222]: clothes — пропущено
+          - generic [ref=e223]: "👉 clothes — «одежда». Слово только во множественном числе: clothes, без a. Одна вещь — a piece of clothing. Запомни: clothes — как «брюки», всегда мн. число."
+        - generic [ref=e224]:
+          - generic [ref=e225]: on — пропущено
+          - generic [ref=e226]: "👉 on — «на». Продаём на площадке: on Wildberries. In — «внутри чего-то», здесь не подходит. Запомни: на сайте и маркетплейсе → on."
+          - generic [ref=e227]: "Правило (on — «на поверхности, в день»): Для дней и дат (on Monday, on May 5) и «на чём-то»: on the website, on Ozon. Платформы и сайты — тоже on.We sell our products on Wildberries. — Мы продаём наши товары на Wildberries.Запомни: on — день и «на» сайте: on Monday, on Ozon."
+        - generic [ref=e228]:
+          - generic [ref=e229]: Wildberries — пропущено
+          - generic [ref=e230]: "👉 Wildberries — название маркетплейса. Названия пишем с большой буквы и без the. Запомни: on Wildberries — без the."
+        - generic [ref=e231]:
+          - generic [ref=e232]: and — пропущено
+          - generic [ref=e233]: "👉 and — «и». Перечисляем вторую площадку. Запомни: A and B — две площадки."
+          - generic [ref=e234]: "Правило (and — «и»): Соединяет слова и части: price and quality. В перечислении из трёх запятые, and перед последним: price, quality, and delivery.We sell clothes and shoes. — Мы продаём одежду и обувь.Запомни: and — перед последним в списке."
+        - generic [ref=e235]:
+          - generic [ref=e236]: Ozon — пропущено
+          - generic [ref=e237]: "👉 Ozon — название маркетплейса. Без the. Запомни: on Ozon."
+      - group [ref=e238]:
+        - 'generic "📘 Почему так: in / on / at — где и на чём" [ref=e239] [cursor=pointer]'
+        - generic [ref=e240]: 👉 Сайт или маркетплейс — это «площадка», поэтому on (on Wildberries), а не in.
+        - generic [ref=e241]: "Правило: on — на поверхности и на площадке: on Wildberries, on Ozon, on the website. in — внутри: in China, in the warehouse, in marketing. at — в точке: at work, at the office, at the meeting."
+        - generic [ref=e242]:
+          - text: I sell clothes on Wildberries and Ozon.
+          - button "🔊" [ref=e243] [cursor=pointer]
+        - generic [ref=e244]: Я продаю одежду на Wildberries и Ozon.
+      - generic [ref=e246]:
+        - text: 📷
+        - link "Wildberries Teplye vesczi dlja SVO" [ref=e247] [cursor=pointer]:
+          - /url: https://commons.wikimedia.org/wiki/File:Wildberries_Teplye_vesczi_dlja_SVO.png
+        - text: ", Wildberries · Public domain — может не совпасть со смыслом"
+        - button "🔄 другая" [ref=e248] [cursor=pointer]
+        - button "🎨 нарисовать ИИ" [ref=e249] [cursor=pointer]
+      - button "Дальше ➜" [active] [ref=e250] [cursor=pointer]

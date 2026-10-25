@@ -1,0 +1,38 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - generic [ref=f1e4]: Ур. 2 · Ассистент
+      - generic [ref=f1e7]: 152 очков
+      - generic [ref=f1e8]: 🔥 1 дн.
+      - generic [ref=f1e9]: ⏱ 12/60 мин
+    - navigation [ref=f1e10]:
+      - button "🏠 Главная" [ref=f1e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=f1e12] [cursor=pointer]
+      - button "📚 Книги" [ref=f1e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=f1e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=f1e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=f1e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=f1e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=f1e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=f1e19] [cursor=pointer]
+  - main [ref=f1e20]:
+    - generic [ref=f1e77]:
+      - generic [ref=f1e78]: Business Benchmark Pre-intermediate · юнит 1 · 🗂 Общее
+      - generic [ref=f1e79]: 12 / 32
+    - generic [ref=f1e97]:
+      - text: 📷
+      - link "Cover van De Accountant, 1e jaargang, juli 1895, nr 1" [ref=f1e98] [cursor=pointer]:
+        - /url: https://commons.wikimedia.org/wiki/File:Cover_van_De_Accountant,_1e_jaargang,_juli_1895,_nr_1.jpg
+      - text: ", Nederlands Instituut van Accountants (NI · Public domain"
+      - button "🔄 другая" [ref=f1e99] [cursor=pointer]
+    - generic [ref=f1e85]:
+      - generic [ref=f1e86]:
+        - text: Что значит accountant
+        - button "🔊" [ref=f1e87] [cursor=pointer]
+        - text: "?"
+        - generic [ref=f1e88]: Our accountant checks the invoices every month.
+      - generic [ref=f1e89]:
+        - button "найм сотрудников" [ref=f1e90] [cursor=pointer]
+        - button "бухгалтер" [ref=f1e91] [cursor=pointer]
+        - button "менеджер по персоналу" [ref=f1e92] [cursor=pointer]
+        - button "рабочие отношения" [ref=f1e93] [cursor=pointer]

@@ -1,0 +1,78 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 1 · Стажёр
+      - generic [ref=e6]: 18 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 0/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e71]:
+      - generic [ref=e72]: 🗣 🚀 Питч партнёру за 2 минуты
+      - generic [ref=e73]: 7 / 23
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - text: "🗣 Скажи по-английски вслух:"
+        - generic [ref=e78]: Мы закупаем на 1688 и продаём на Wildberries.
+        - generic [ref=e79]: "Ситуация: «Мы закупаем на 1688 и продаём на Wildberries»."
+      - paragraph [ref=e80]: 🎙 пробел — говори по-английски, пробел ещё раз — текст встанет в поле и игра проверит (Esc — отмена).
+      - textbox "Пробел — сказать голосом (или напечатай)" [ref=e81]
+      - generic [ref=e82]: We source on 1688 and sell on Wildberries
+      - generic [ref=e114]:
+        - button "Проверить" [disabled] [ref=e115] [cursor=pointer]
+        - button "💡 Подсказка" [disabled] [ref=e116] [cursor=pointer]
+        - button "Показать ответ" [disabled] [ref=e117] [cursor=pointer]
+    - generic [ref=e119]:
+      - text: ❌ Не совсем
+      - generic [ref=e120]:
+        - text: "Правильно: We source on 1688 and sell on Wildberries"
+        - button "🔊" [ref=e121] [cursor=pointer]
+      - generic [ref=e122]: Послушай и повтори вслух 2–3 раза.
+      - generic [ref=e123]:
+        - 'heading "📕 Разбор: почему так правильно" [level=4] [ref=e124]'
+        - generic [ref=e125]:
+          - generic [ref=e126]: We — ты сказала «zzz»
+          - generic [ref=e127]: "👉 We — «мы». Подлежащее: компания. Запомни: We source."
+        - generic [ref=e128]:
+          - generic [ref=e129]: source — пропущено
+          - generic [ref=e130]: "👉 source — «закупаем, находим поставщиков». Здесь глагол: source on 1688 — закупаем на 1688. С we без -s. Запомни: source — искать и закупать."
+        - generic [ref=e131]:
+          - generic [ref=e132]: on — пропущено
+          - generic [ref=e133]: "👉 on — «на». На сайте 1688: on. Запомни: на сайте → on."
+          - generic [ref=e134]: "Правило (on — «на поверхности, в день»): Для дней и дат (on Monday, on May 5) и «на чём-то»: on the website, on Ozon. Платформы и сайты — тоже on.We sell our products on Wildberries. — Мы продаём наши товары на Wildberries.Запомни: on — день и «на» сайте: on Monday, on Ozon."
+        - generic [ref=e135]:
+          - generic [ref=e136]: 1688 — пропущено
+          - generic [ref=e137]: "👉 1688 — название китайской площадки. Читается one six eight eight. Запомни: on 1688."
+        - generic [ref=e138]:
+          - generic [ref=e139]: and — пропущено
+          - generic [ref=e140]: "👉 and — «и». Соединяет: закупаем И продаём. Запомни: and."
+          - generic [ref=e141]: "Правило (and — «и»): Соединяет слова и части: price and quality. В перечислении из трёх запятые, and перед последним: price, quality, and delivery.We sell clothes and shoes. — Мы продаём одежду и обувь.Запомни: and — перед последним в списке."
+        - generic [ref=e142]:
+          - generic [ref=e143]: sell — пропущено
+          - generic [ref=e144]: "👉 sell — «продаём». С we без -s. Запомни: sell — продавать."
+        - generic [ref=e145]:
+          - generic [ref=e146]: on — пропущено
+          - generic [ref=e147]: "👉 on — «на». Продаём на площадке: on Wildberries. Запомни: на площадке → on."
+          - generic [ref=e148]: "Правило (on — «на поверхности, в день»): Для дней и дат (on Monday, on May 5) и «на чём-то»: on the website, on Ozon. Платформы и сайты — тоже on.We sell our products on Wildberries. — Мы продаём наши товары на Wildberries.Запомни: on — день и «на» сайте: on Monday, on Ozon."
+        - generic [ref=e149]:
+          - generic [ref=e150]: Wildberries — пропущено
+          - generic [ref=e151]: "👉 Wildberries — название маркетплейса. Без the. Запомни: on Wildberries."
+      - group [ref=e152]:
+        - 'generic "📘 Почему так: in / on / at — где и на чём" [ref=e153] [cursor=pointer]'
+        - generic [ref=e154]: 👉 Сайт или маркетплейс — это «площадка», поэтому on (on Wildberries), а не in.
+        - generic [ref=e155]: "Правило: on — на поверхности и на площадке: on Wildberries, on Ozon, on the website. in — внутри: in China, in the warehouse, in marketing. at — в точке: at work, at the office, at the meeting."
+        - generic [ref=e156]:
+          - text: I sell clothes on Wildberries and Ozon.
+          - button "🔊" [ref=e157] [cursor=pointer]
+        - generic [ref=e158]: Я продаю одежду на Wildberries и Ozon.
+      - button "Дальше ➜" [active] [ref=e159] [cursor=pointer]
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"

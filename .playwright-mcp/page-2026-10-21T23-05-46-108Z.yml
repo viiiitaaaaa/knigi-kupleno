@@ -1,0 +1,27 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e7]: 188 очков
+      - generic [ref=e8]: 🔥 1 дн.
+      - generic [ref=e9]: ⏱ 16/60 мин
+    - navigation [ref=e10]:
+      - button "🏠 Главная" [ref=e11] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e12] [cursor=pointer]
+      - button "📚 Книги" [ref=e13] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e14] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e15] [cursor=pointer]
+      - button "💪 Сложные" [ref=e16] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e17] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e18] [cursor=pointer]
+      - button "📈 Журнал" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e140]:
+      - generic [ref=e141]: 🛍️ Покупатель из США пишет в чат
+      - generic [ref=e142]: 13 / 35
+    - generic [ref=e145]:
+      - generic [ref=e146]: "🛍️ Покупатель: «Hi! Does this skirt run small?» Что он спрашивает?"
+      - generic [ref=e148]:
+        - button "Is the skirt cheap?" [ref=e149] [cursor=pointer]
+        - button "Can the skirt be used for running?" [ref=e150] [cursor=pointer]
+        - button "Is the skirt smaller than the usual size?" [ref=e151] [cursor=pointer]

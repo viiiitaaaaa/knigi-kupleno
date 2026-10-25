@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Ур. 2 · Ассистент
+      - generic [ref=e6]: 82 очков
+      - generic [ref=e7]: 🔥 1 дн.
+      - generic [ref=e8]: ⏱ 4/60 мин
+    - navigation [ref=e9]:
+      - button "🏠 Главная" [ref=e10] [cursor=pointer]
+      - button "🎬 Сценки" [ref=e11] [cursor=pointer]
+      - button "📚 Книги" [ref=e12] [cursor=pointer]
+      - button "🎧 Слушать" [ref=e13] [cursor=pointer]
+      - button "🗣 Говорить" [ref=e14] [cursor=pointer]
+      - button "💪 Сложные" [ref=e15] [cursor=pointer]
+      - button "🛠 Мои ошибки" [ref=e16] [cursor=pointer]
+      - button "🎯 Трудное" [ref=e17] [cursor=pointer]
+      - button "📈 Журнал" [ref=e18] [cursor=pointer]
+  - main [ref=e19]:
+    - generic [ref=e240]:
+      - generic [ref=e241]: 🔗 Сообщение в LinkedIn
+      - generic [ref=e242]: 7 / 29
+    - generic [ref=e245]:
+      - generic [ref=e246]: 🔗 Спроси про вакансии мягко.
+      - generic [ref=e248]:
+        - button "Is your team hiring for remote e-commerce roles?" [ref=e249] [cursor=pointer]
+        - button "Do you have job for me?" [ref=e250] [cursor=pointer]
+        - button "Your team hire?" [ref=e251] [cursor=pointer]
+  - generic [ref=e47]: "🌱 Награда: Первый шаг"
