@@ -22,3 +22,10 @@
 
 ## Правило 25.10: Ollama/Hermes сама не вызываю, ТОЛЬКО по её вызову. В этой вкладке она САМА вызвала (сказала «Hermes есть» и дала ключ в .env) — чтение через hermes_glubokiy.py разрешено ею; остановила я по ошибке, возобновлено.
 ## Её слово 25.10 (по скрину Рабочего стола, ollama launch claude): модели GLM, Kimi, DeepSeek заняты её кредитами/планом — НЕ рассматривать и не вызывать. Брать из остальных: gemma4:31b, gpt-oss, nemotron. Kimi по ключам Free закрыта (402).
+
+## Состояние на «споки» 25.10.2026 ночью
+- Конспекты по главам (блоки 1, 3, 4): glubokiy\ — 266 из 266 содержательных кусков (Gemini 18, gpt-oss/Hermes ~140, gemma4:31b остальное); moonwalking_einstein_13 — указатель, пропущен. Сверка: sverka.py «266 из 266».
+- Установлены скиллы (7, все проверены proverka, с книгой НЕ сверены): lanham-ai-agents, ultralearning, agentic-design-patterns, hur-song-build-ai-agent, albada-ai-agents, second-brain, huyen-ai-engineering. Черновики — skill_chernovik_glubokiy\.
+- Осталось 11 книг без скилла (конспекты готовы): Koenigstein, rag_production, rag_python_cookbook, co_intelligence, prediction_machines, loop_engineering_playbook, lean_analytics, minto_pyramid, storytelling_data_makeovers, make_it_stick, peak_ericsson, a_mind_for_numbers, moonwalking_einstein. Ждёт её «давай» (расход лимита Claude ~120–200 тыс. токенов на книгу; /usage — смотрит она).
+- Ключи Ollama (2 шт.) — в .env (вне git). Kimi/GLM/DeepSeek — её слово: не использовать; Kimi по ключам Free закрыта (402).
+- Задания помощникам — ZADANIE_skill_*.md, ZADANIE_huyen_part*.md. Скрипты: gemini_glubokiy.py, hermes_glubokiy.py (--cloud --model --keyvar --rev).
