@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Итог обучения по книгам и GitHub</title>
+<style>
+:root{--bg:#fbf8f3;--fg:#2a2623;--mut:#6f665e;--card:#fff;--line:#e4dccf;--acc:#9a4d2e;--ok:#2f7d4f;--mid:#b07a14;--bad:#b23a3a}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1917;--fg:#ece6dd;--mut:#a39a8f;--card:#242120;--line:#3a3532;--acc:#e0916b;--ok:#6fc08b;--mid:#e0b050;--bad:#e27b7b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 80px}
+h1{font-size:2rem;margin:.2em 0}
+h2{font-size:1.5rem;margin:2em 0 .4em;border-bottom:2px solid var(--acc);padding-bottom:.2em;color:var(--acc)}
+h3{font-size:1.15rem;margin:1.6em 0 .3em}
+p,li{max-width:70ch}
+.mut{color:var(--mut)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0}
+.zap{border-left:5px solid var(--acc)}
+.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font:15px/1.4 system-ui,Segoe UI,sans-serif;background:var(--card)}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:rgba(154,77,46,.12)}
+.ok{color:var(--ok);font-weight:600}.mid{color:var(--mid);font-weight:600}.bad{color:var(--bad);font-weight:600}
+code{font:14px Consolas,monospace;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px;word-break:break-all}
+.sheme{font:14px/1.5 Consolas,monospace;white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;overflow-x:auto}
+nav a{margin-right:14px;color:var(--acc)}
+</style>
+</head>
+<body>
+<main>
+<h1>Итог обучения: книги и скиллы с GitHub</h1>
+<p class="mut">Для Виты · 26.10.2026 · всё сверено с файлами на ПК. Где не нашла — так и написано: «не нашла».</p>
+<nav><a href="#kratko">Коротко</a><a href="#kn">Часть 1 — книги</a><a href="#gh">Часть 2 — GitHub</a><a href="#hv">Хвосты и что нужно от тебя</a></nav>
+
+<h2 id="kratko">Коротко (главное в шести строках)</h2>
+<div class="box zap">
+<ol>
+<li><b>Книги.</b> В папке «куплено» 127 файлов, 15 тем (REESTR_2510.md). Мы взялись за технические: по ним сделано <b>21 книжный скилл</b> в <code>skills</code> (см. таблицу), плюс старые книжные скиллы по договорённостям, учёбе, английскому и маркетингу.</li>
+<li><b>Как.</b> Книга → глубокие конспекты по главам (266 штук) → второй читатель Gemini (425 пересказов) → скилл «как делать» → проверка агентом <code>proverka</code> → сверка с самим текстом книги → исправление ошибок.</li>
+<li><b>Честный итог проверки.</b> Скиллы по конспектам сверены, а с самими книгами — только по аналитике и обучению (6 штук). Совпало с книгой от 49% до 72% строк, остальное исправлено (подробно ниже).</li>
+<li><b>Приёмы</b> из книг вписаны в твой главный файл CLAUDE.md тремя блоками (10 + 14 + обвязка). Живая проверка в работе показала <b>8 из 14</b> — работает не на 100%.</li>
+<li><b>GitHub.</b> В реестре чужого <b>113 скиллов</b> + ещё 9 по оценке ИИ = 122. В работе (<code>skills</code>) стоят 39, остальные лежат в архиве и поднимаются по твоему слову.</li>
+<li><b>Не нашла</b> (список в конце): записи о проверке для 8 скиллов, которые стоят, но не в реестре чужого; результаты проверки для 7 «старых» черновиков в числах.</li>
+</ol>
+</div>
+
+<h2 id="kn">Часть 1. Книги → скиллы</h2>
+
+<h3>1.1. Что такое «скилл из книги» — на пальцах</h3>
+<p>Книга — как толстый учебник. Скилл — как <b>шпаргалка на одну тему</b>, которая сама открывается, когда я слышу нужные слова. Без неё я «помню» книгу общими словами. С ней — достаю точный шаг и страницу.</p>
+<div class="box"><b>Запомни:</b> скилл = короткая инструкция «в такой ситуации делай так-то (стр. N)». Если инструкции нет в скилле или в CLAUDE.md — приём лежит «в справке» и не работает (твой урок 25.10: <code>knigi-ne-v-spravke-a-v-rabotu</code>).</div>
+
+<h3>1.2. Как мы это делали (по шагам)</h3>
+<div class="sheme">КНИГА (pdf/epub)
+   │ 1. в текст, по главам                   (txt13\ — 45 файлов)
+   ▼
+КОНСПЕКТЫ по главам                          (glubokiy\ — 266 из 266 кусков;
+   │                                           писали Gemini, gpt-oss/Hermes, gemma — не я)
+   │ 2. второй читатель Gemini               (pereskaz_gemini2\ — 425 файлов, не собрано 0)
+   ▼
+СКИЛЛ-черновик «как делать»  ← помощник Sonnet/Ollama пишет по заданию-файлу (ZADANIE_skill_*.md)
+   │ 3. проверка агентом proverka: сверяет строки скилла с конспектом
+   │ 4. сверка с ТЕКСТОМ книги (поиск слов/чисел/страниц)
+   ▼
+ИСПРАВЛЕНИЯ → снова проверка → запись в REESTR_2510.md → скилл в ~\.claude\skills\
+   │
+   ▼
+ПРИЁМЫ в CLAUDE.md (3 блока) + claude-code-priemy\references\</div>
+<ul>
+<li><b>Пока шли только через NotebookLM</b> (правило 17.10, аккаунт Freya) — для психологии/НЛП/договорённостей. Для технических книг 25.10 ты разрешила конспекты открытыми моделями (по плану PLAN_tehnika_2510.md).</li>
+<li><b>Старый метод проверки</b> (книги про договорённости и НЛП): карточки приёмов → слепой тест (6 реплик «до», 6 новых «после») → судья по критериям, написанным заранее. Писатель теста ≠ исполнитель ≠ судья.</li>
+<li><b>Тебе принадлежат решения:</b> «только техника, без психологии/ОКР/любви/работы» (25.10), «все вноси», «делай», «сверь с книгой» — так мы и шли.</li>
+</ul>
+
+<h3>1.3. Какие книги → какие скиллы</h3>
+<p class="mut">Колонка «Проверка» — как записано в REESTR_2510.md. «По конспекту» = скилл сверен с конспектом, не с книгой.</p>
+
+<h4>А. Технические (25–26.10.2026) — скиллы лежат в <code>~\.claude\skills\</code></h4>
+<div class="tw"><table>
+<tr><th>Книга</th><th>Скилл</th><th>Прочитано</th><th>Проверка</th></tr>
+<tr><td>Мукминов «Claude Code: Полное руководство»</td><td><code>mukminov-claude-code</code></td><td>16 из 16 кусков (вместе с Dickey)</td><td>15 из 16 (вместе с Dickey), 3 поправки</td></tr>
+<tr><td>Dickey «Mastering Claude AI» (про чат-Claude, не Claude Code)</td><td><code>dickey-mastering-claude</code></td><td>см. выше</td><td>см. выше</td></tr>
+<tr><td>Koenigstein «AI Agents: Definitive Guide»</td><td><code>koenigstein-ai-agents</code></td><td>32 из 32</td><td>11 из 12, стр. 304 исправлена; страниц в конспектах нет</td></tr>
+<tr><td>Mendelevitch «Hands-On RAG for Production»</td><td><code>mendelevitch-rag-production</code></td><td>15 из 15</td><td>12 из 12</td></tr>
+<tr><td>Polzer «RAG with Python Cookbook»</td><td><code>polzer-rag-python-cookbook</code></td><td>11 из 11</td><td>12 из 12</td></tr>
+<tr><td>Mollick «Co-Intelligence»</td><td><code>mollick-co-intelligence</code></td><td>8 из 8</td><td>12 из 12</td></tr>
+<tr><td>Agrawal и др. «Prediction Machines»</td><td><code>prediction-machines</code></td><td>11 из 11</td><td>12 из 12</td></tr>
+<tr><td>«The 0→1 Loop Engineering Playbook»</td><td><code>loop-engineering-playbook</code></td><td>8 из 8</td><td>11 из 12, стр. 223 исправлена</td></tr>
+<tr><td>Gulli «Agentic Design Patterns»</td><td><code>agentic-design-patterns</code></td><td>16 частей (из шапки скилла)</td><td>проверен <code>proverka</code>, с книгой не сверен; числа проверки — <b>не нашла</b></td></tr>
+<tr><td>Chip Huyen «AI Engineering»</td><td><code>huyen-ai-engineering</code></td><td>22 части (из шапки)</td><td>то же, числа — <b>не нашла</b></td></tr>
+<tr><td>Hur–Song «Build an AI Agent (From Scratch)»</td><td><code>hur-song-build-ai-agent</code></td><td>—</td><td>то же, числа — <b>не нашла</b></td></tr>
+<tr><td>Albada «Building Applications with AI Agents»</td><td><code>albada-ai-agents</code></td><td>9 частей (из шапки)</td><td>то же, числа — <b>не нашла</b></td></tr>
+<tr><td>Lanham «AI Agents in Action»</td><td><code>lanham-ai-agents</code></td><td>12 частей (из шапки)</td><td>цитаты сверены: 119 из 120 найдены (96 дословно); скилл — числа <b>не нашла</b></td></tr>
+<tr><td>Scott Young «Ultralearning»</td><td><code>ultralearning</code></td><td>11 конспектов</td><td>проверен <code>proverka</code>, числа <b>не нашла</b></td></tr>
+<tr><td>Tiago Forte «Building a Second Brain»</td><td><code>second-brain</code></td><td>9 конспектов</td><td>проверен <code>proverka</code>, числа <b>не нашла</b></td></tr>
+</table></div>
+
+<h4>Б. Аналитика и обучение (26.10.2026) — проверены строго, три круга</h4>
+<div class="tw"><table>
+<tr><th>Книга → скилл</th><th>Прочитано</th><th>1-я проверка (12 строк)</th><th>Все строки по конспекту</th><th>Совпало с ТЕКСТОМ книги</th><th>После правок, повтор</th></tr>
+<tr><td>Lean Analytics → <code>lean-analytics</code></td><td>17 из 17</td><td>6 из 12</td><td>27 из 40</td><td>26 из 40</td><td>24 из 27</td></tr>
+<tr><td>Minto «Принцип пирамиды» → <code>minto-pyramid</code></td><td>12 из 12</td><td>12 из 12</td><td>72 из 78</td><td>52 из 78</td><td>27 из 31</td></tr>
+<tr><td>Storytelling with Data → <code>storytelling-with-data</code></td><td>10 из 10</td><td>11 из 12</td><td>46 из 53</td><td>32 из 53</td><td>21 из 24</td></tr>
+<tr><td>Make It Stick → <code>make-it-stick</code></td><td>12 из 12</td><td>7 из 12</td><td>27 из 36</td><td>26 из 36</td><td>20 из 25</td></tr>
+<tr><td>Peak (Ericsson) → <code>peak-ericsson</code></td><td>15 из 15</td><td>8 из 12</td><td>22 из 35</td><td>17 из 35</td><td>24 из 27</td></tr>
+<tr><td>A Mind for Numbers → <code>mind-for-numbers</code></td><td>11 из 11</td><td>11 из 12</td><td>42 из 57</td><td>39 из 57</td><td>24 из 26</td></tr>
+</table></div>
+<div class="box"><b>Что это значит на пальцах:</b> первая проверка на 12 строках была слишком оптимистичной. Когда сверили <i>все</i> строки с текстом книг, нашлись выдумки (в таблице порогов Lean колонка «Плохо» была придумана — заменена на «в конспекте нет»), перевёрнутый смысл (Storytelling: правило про тёмный фон; Make It Stick: «сравнение с сильными») и сдвинутые страницы (в скиллах номера PDF, печатные меньше на 17–26). Всё найденное исправлено. «Нет в книге» = «не нашла поиском», а не доказательство, что там нет.</div>
+
+<h4>В. Книги про людей, деньги, учёбу и маркетинг (старые, до 25.10)</h4>
+<div class="tw"><table>
+<tr><th>Скилл</th><th>Из каких книг</th><th>Где лежит</th><th>Проверка «до → после» (из памяти, 20–24.10)</th></tr>
+<tr><td><code>dogovorennosti</code> (договорённости до работы, цена, созвоны о деньгах)</td><td>Weiss, Klaff, Voss, Hall, Mom Test, Challenger Sale, SPIN, Колотилов, Obviously Awesome; микроэкономика</td><td>skills</td><td>Voss/Hall/Weiss/Klaff/Mom Test: ~3 из 30 → ~8 из 30. Challenger 0→2, SPIN 2→2, Колотилов 0→1, Obviously Awesome 0→1. Повтор 23.10 по 10 книгам: <b>39 → 55 из 60</b>. Свежие 40 ситуаций 24.10: <b>36 из 40</b>.</td></tr>
+<tr><td><code>kak-uchitsya</code> (запоминать, карточки, интервалы)</td><td>Make It Stick, Ultralearning, A Mind for Numbers, Peak, Moonwalking with Einstein, Fluent Forever, Building a Second Brain</td><td>skills</td><td>Make It Stick 0→2; Mind for Numbers 0→0 (мерка была неверной — перепроверить, дальше сверка 26.10 в таблице Б). Только про учёбу (твоё слово 19.10).</td></tr>
+<tr><td><code>claude-code-priemy</code> (приёмы работы с Claude Code)</td><td>Co-Intelligence, Build an AI Agent, Мукминов, Huyen, Gulli, Lanham, Koenigstein, Loop Playbook…</td><td>skills (+ references\iz_knig*.md)</td><td>Co-Intelligence 0→2; Build an AI Agent 0→1.</td></tr>
+<tr><td><code>knowledge-library</code> (справочная библиотека)</td><td>конспекты 15 купленных книг по маркетингу и Claude (Котлер, Grewal, Marketing 4.0/6.0/7.0, SEO 2025 и др.), учебник микроэкономики Emerson (24 главы), выжимки Python</td><td>skills</td><td>числа проверки — <b>не нашла</b></td></tr>
+<tr><td><code>angliyskiy</code> (деловой английский, игра-тренажёр)</td><td>10 купленных учебников (в т.ч. Murphy Essential Grammar — красная разобрана 22.10)</td><td>skills</td><td><b>не нашла</b></td></tr>
+<tr><td><code>love-scripts</code> (переписка при знакомстве)</td><td>курс «НЛП-влюбление» + НЛП-пять (Dilts ×2, O'Connor, Bandler ×2)</td><td><b>архив</b></td><td>НЛП-пять: 3 из 30 → 8 из 30, запретных ошибок 13 → 3.</td></tr>
+<tr><td><code>dropship-lessons</code> (уроки для магазина)</td><td>Amazon FBA, Entrepreneurial Marketing + новости</td><td><b>архив</b></td><td>Amazon FBA 0→0 (запретных 2→0); Entrepreneurial Marketing 0→1 (запретных 4→0).</td></tr>
+</table></div>
+<p class="mut">Книги про отношения (9 штук, 23.10) разобраны в NotebookLM; в скиллы мы их не превращали («не её технический блок»). Психология, НЛП, ОКР, английский, тело — по твоему слову 25.10 отложены.</p>
+
+<h3>1.3а. Зачем каждый скилл и где поможет тебе</h3>
+<p class="mut">«Зачем» взято из описания самого скилла. «Где поможет» — мой вывод по твоим проектам из CLAUDE.md (сайт «Смарт Люкс», бот дел, сборщики новостей и 1688, пульт, вакансии, учёба) — это <b>предположение</b>, не проверенное на деле.</p>
+<div class="tw"><table>
+<tr><th>Скилл</th><th>Зачем (на пальцах)</th><th>Где поможет</th></tr>
+<tr><td colspan="3"><b>Работа с Claude и ИИ</b></td></tr>
+<tr><td>mukminov-claude-code</td><td>Как вести Claude Code: писать запросы, чтобы не переделывать; CLAUDE.md; экономить токены (/compact, /clear, выбор модели); разрешения, hooks, MCP.</td><td>Лимит и «разрешить?»: твои правила в CLAUDE.md, пульт, сторож, экономия на помощниках.</td></tr>
+<tr><td>dickey-mastering-claude</td><td>Как работать с Claude в чате (claude.ai): запросы, правки, проверка ответов, Artifacts, Projects, сбои.</td><td>Когда ты работаешь в чате, а не в Claude Code; для проверки «не выдумка ли».</td></tr>
+<tr><td>mollick-co-intelligence</td><td>ИИ как партнёр: 4 принципа, роли в промптах, проверка на галлюцинации, что делить «я / делегировать / автомат».</td><td>Решать, что отдать помощнику Sonnet/Haiku, что делаю сама, что — ты.</td></tr>
+<tr><td>prediction-machines</td><td>Взгляд экономиста: когда ИИ окупается, где оставить человека, как считать цену ошибки.</td><td>Решать, что автоматизировать в бизнесе (ИП, лидогенерация, вакансии), а где проверка человеком нужна.</td></tr>
+<tr><td colspan="3"><b>Строим агентов и ботов</b></td></tr>
+<tr><td>agentic-design-patterns (Gulli)</td><td>Каталог приёмов: цепочка промптов, маршрутизация, параллель, рефлексия, память, MCP, ошибки, человек в контуре.</td><td>Свои боты (дела, вакансии) и сборщики: какую схему выбрать.</td></tr>
+<tr><td>huyen-ai-engineering</td><td>Как делать приложение на LLM: оценка моделей, промпты и защита, RAG, агенты, скорость и цена, мониторинг.</td><td>Бот «Дела», тренажёры, всё где модель отвечает людям: как оценить качество и не переплатить.</td></tr>
+<tr><td>hur-song-build-ai-agent</td><td>Агент с нуля: цикл рассуждения, инструменты, контекст, память, планирование, песочница.</td><td>Если решим собрать своего агента (бот вакансий в «Моих делах»).</td></tr>
+<tr><td>albada-ai-agents</td><td>Как выбрать задачу и модель, навыки-инструменты, порядок запуска, один агент или несколько, доверие пользователя.</td><td>Проектирование ботов; выбор «один помощник или несколько».</td></tr>
+<tr><td>lanham-ai-agents</td><td>5 частей агента; вызов функций; AutoGen, CrewAI; память; оценка промптов.</td><td>Сверка, когда пробуем готовые рамки для агентов.</td></tr>
+<tr><td>koenigstein-ai-agents</td><td>Выбор модели, инструменты, память, запуск, тесты из трасс, безопасность агента.</td><td>Поиск причины сбоев ботов и проверка качества.</td></tr>
+<tr><td>loop-engineering-playbook</td><td>Рабочий цикл агента: лимит шагов, остановка, повтор без дублей, человек в цикле, ошибки, экономия.</td><td>Долгие сборы (tg_monitor, 1688, радар): не зациклиться, не дублировать запрос — это твои «потолок шагов» и «повтор ≤3».</td></tr>
+<tr><td colspan="3"><b>Поиск по своим документам (RAG)</b></td></tr>
+<tr><td>mendelevitch-rag-production</td><td>RAG в рабочем виде: нарезка, векторная база, гибридный поиск, защита, оценка.</td><td>Поиск по делам, конспектам и новостям, если захотим «спросить свою базу».</td></tr>
+<tr><td>polzer-rag-python-cookbook</td><td>Рецепты RAG на Python: загрузка Word/PDF/аудио, FAISS/Chroma, улучшение поиска, деплой.</td><td>Тот же поиск, но с кодом — для твоего Python.</td></tr>
+<tr><td colspan="3"><b>Цифры и тексты</b></td></tr>
+<tr><td>lean-analytics</td><td>Одна главная метрика, стадия бизнеса, пороги и решения по цифрам.</td><td>Правило «порог до сбора»: менять поставщика/цену/рекламу по цифрам (сайт, лидогенерация).</td></tr>
+<tr><td>minto-pyramid</td><td>Вывод первым, группы аргументов, «ситуация–осложнение–вопрос».</td><td>Мои отчёты тебе и документы (юр. обращения, письма, КП): коротко, итог в начале.</td></tr>
+<tr><td>storytelling-with-data</td><td>Понятные графики: вид, убрать лишнее, акцент.</td><td>Панели (новости, лидогенерация), отчёты клиентам.</td></tr>
+<tr><td colspan="3"><b>Учёба и память</b></td></tr>
+<tr><td>make-it-stick</td><td>Запоминать через самопроверку, интервалы, перемешивание.</td><td>Python по капле, английский, любые курсы.</td></tr>
+<tr><td>peak-ericsson</td><td>Осознанная практика: цель, фокус, обратная связь, выход из зоны комфорта.</td><td>Тренажёр английского (игра), навыки с ИИ.</td></tr>
+<tr><td>mind-for-numbers</td><td>Учить трудное: фокусный и рассеянный режим, чанкинг, сон, тесты.</td><td>Сложные темы (код, право); как делить урок.</td></tr>
+<tr><td>ultralearning</td><td>Как мне учить тебя и строить учебный проект: 9 принципов, 5 шагов.</td><td>План «выучить X за N недель».</td></tr>
+<tr><td>second-brain</td><td>Заметки по методу CODE и PARA: что сохранять и куда класть.</td><td>Память, папки дел, порядок на Диске.</td></tr>
+<tr><td colspan="3"><b>Люди, деньги, маркетинг, английский (старые)</b></td></tr>
+<tr><td>dogovorennosti</td><td>Условия и оплата ДО работы, цена без кейсов, как попросить денег, разбор созвонов.</td><td>Заказчики, «процент потом», Андрей, подруга-юрист, оркестратор юриста.</td></tr>
+<tr><td>kak-uchitsya</td><td>Сводка приёмов учёбы из 7 книг, ответы простыми словами.</td><td>Объяснения тебе «на пальцах», учебные игры.</td></tr>
+<tr><td>claude-code-priemy</td><td>Привычки работы с Claude Code из книг и новостей.</td><td>Каждый день: лимит, помощники, CLAUDE.md.</td></tr>
+<tr><td>knowledge-library</td><td>Справочник: маркетинг (Котлер и др.), микроэкономика (цены), Python (asyncio, pandas), проверка ИНН/ОГРН.</td><td>Цены магазина, ускорение сборщиков, проверка реквизитов в делах.</td></tr>
+<tr><td>angliyskiy</td><td>Деловой английский A2→B1, игра-тренажёр.</td><td>Письма, вакансии США, созвоны.</td></tr>
+</table></div>
+
+<h3>1.4. Где это записано в «рабочих правилах» (CLAUDE.md и справочник)</h3>
+<div class="tw"><table>
+<tr><th>Блок</th><th>Сколько</th><th>Источник</th></tr>
+<tr><td>Приёмы из технических книг (25.10, «все вноси»)</td><td>10 правил</td><td><code>claude-code-priemy/references/iz_knig_2.md</code> (43 приёма), <code>iz_knig_3.md</code> (33), <code>iz_knig_novye13.md</code> (143, первое чтение 13 книг)</td></tr>
+<tr><td>Приёмы второго чтения (25.10, «все добавляй»)</td><td>14 пунктов</td><td><code>references/vtoroy_chitatel_2510.md</code> (Gemini как второй читатель)</td></tr>
+<tr><td>Приёмы обвязки (23.10)</td><td>блок строк (сколько — не считала)</td><td><code>references/obvyazka_dobavka_2310.md</code></td></tr>
+<tr><td>Книги об агентах (Lanham, Koenigstein)</td><td>приёмы со ссылками</td><td><code>references/knigi_agenty_lanham_koenigstein_2310.md</code></td></tr>
+</table></div>
+
+<h3>1.5. Что из этого уже применяется — примеры «на живом»</h3>
+<ul>
+<li><b>Вопросы тебе — одной пачкой</b> с цветами 🟢🟡🔴, а не по одному (п.1 из 10).</li>
+<li><b>Задание помощнику — файлом</b>: цель, файлы, образец итога, «если А — то Б», потолок шагов (п.2).</li>
+<li><b>Дело с 3+ шагами</b> — сначала 3–5 строк плана и вопрос про неясное (п.3).</li>
+<li><b>Перед большим сбором</b> — назвать числа (страницы × слова × 1,3; для русского ×2–2,5) и ждать «да» (п.6).</li>
+<li><b>Важный факт — 3 независимых источника</b> (суд, цена, ИНН, адрес) (п.7 второго чтения).</li>
+<li><b>В конце дела — три строки</b> «планировала / вышло / сделаю иначе» (п.14 второго чтения).</li>
+<li>В этой же задаче: помощников брала только на Sonnet/Haiku (правило экономии), число «113» выше посчитано кодом, а не на глаз (п. «проверять сперва кодом»).</li>
+</ul>
+<div class="box">
+<b>Честная оценка применения:</b>
+<ul>
+<li>Проверка «понарошку» через помощника: 8 из 10. Но помощники-субагенты <b>не видят CLAUDE.md</b> (проба haiku), поэтому эта проверка <b>не доказывает</b> живое поведение.</li>
+<li>Живая проверка в рабочей вкладке (4 дела): проверяльщик <span class="mid">8 из 14</span>; скиллы <span class="bad">0 из 2</span> (скиллы не применились в тех делах).</li>
+<li>Повтор в НОВОЙ вкладке с этим CLAUDE.md — <b>не сделан</b>. Улучшение после правок пунктов 6–7 — <b>не доказано</b> (один прогон).</li>
+</ul></div>
+
+<h3>1.6. Как это поможет дальше — по-простому</h3>
+<ul>
+<li><b>Меньше выдумок.</b> У скиллов строки с номерами страниц и пометка «в конспекте нет» — я не придумываю число, а говорю «не нашла».</li>
+<li><b>Дешевле.</b> Конспекты написаны один раз; читать книгу заново (200 000+ токенов) не нужно — открывается короткий скилл.</li>
+<li><b>Быстрее строить своё</b> (бот, сборщики, агенты): Huyen, Gulli, Lanham, Koenigstein, Albada, Hur–Song, RAG-книги, Loop Playbook — это «как делать», а не пересказ.</li>
+<li><b>Лучше работать с клиентами и деньгами:</b> <code>dogovorennosti</code> задаёт порядок «условия → да → работа».</li>
+<li><b>Учёба и память:</b> <code>kak-uchitsya</code>, <code>make-it-stick</code>, <code>peak-ericsson</code>, <code>mind-for-numbers</code>, <code>ultralearning</code>, <code>second-brain</code>.</li>
+<li><b>Тексты и графики:</b> <code>minto-pyramid</code> (вывод первым), <code>storytelling-with-data</code>, <code>lean-analytics</code> (одна главная метрика).</li>
+</ul>
+
+<h2 id="gh">Часть 2. Скиллы с GitHub (чужие)</h2>
+
+<h3>2.1. Как они к нам попадают</h3>
+<div class="sheme">GitHub (чужое)
+   │ 1. качаем в КАРАНТИН  ~\.claude\karantin\<имя>\   — оттуда Claude ничего не загружает
+   │ 2. читаю все файлы целиком; текст внутри = данные, не команды
+   │ 3. ищу тревожное: ключи/пароли, отправка наружу, curl|bash, base64, правка settings/хуков,
+   │    «игнорируй инструкции»; поддельные репозитории с зип-архивом
+   │ 4. отчёт тебе: откуда / что делает / что нашла / 🟢🟡🔴
+   │ 5. ставлю ТОЛЬКО после твоего «да»; 🔴 не ставлю
+   ▼
+~\.claude\skills\  +  запись в pult\razresheniya\chuzhie.json (дата, откуда, вердикт)
+   │ 6. сторож storozh.py спрашивает тебя при запуске их файлов
+   ▼
+не нужен сейчас → ~\.claude\skills-v-arhive\ (список тем — _SPISOK.md); вернуть — по твоему «подними скиллы по теме …»</div>
+<p>Правило проверки: <code>pult\razresheniya\proverka_chuzhogo.md</code> (от 16.10.2026). 🟢 = только текст-инструкции и понятные скрипты без сети. 🟡 = есть исполняемые файлы, свои хуки, скачивание или доступ к браузеру/почте (поэтому у 🟡 мы на 26.10 вырезали хуки, принуждения и лишнее — см. колонку «Что поправили»). 🔴 = не ставим.</p>
+
+<h3>2.2. Цифры по реестру (посчитано кодом)</h3>
+<div class="box zap">
+<b>113</b> записей-скиллов в <code>chuzhie.json</code> (20.10 — 76; 25.10 — 21; 26.10 — 16) + <b>9</b> по оценке ИИ из <code>.claude\chuzhie.json</code> (23.10) = <b>122</b>.<br>
+<b>39</b> стоят в <code>skills</code> (в работе). <b>74</b> только в архиве + 9 evals в архиве. <code>security-audit</code> лежит и там, и там (дубль).
+</div>
+
+<h3>2.3. Что взяли, откуда, зачем, чем поможет</h3>
+
+<h4>А. Стоят в работе (<code>skills</code>) — 39 скиллов</h4>
+<div class="tw"><table>
+<tr><th>Источник (GitHub)</th><th>Скиллы</th><th>Зачем / чем поможет</th><th>Дата · вердикт · что поправили</th></tr>
+<tr><td>muratcankoylan / Agent-Skills-for-Context-Engineering</td><td>context-fundamentals, context-degradation, context-compression, context-optimization, memory-systems, filesystem-context (6) + advanced-evaluation, evaluation, bdi-mental-states, harness-engineering, hosted-agents, latent-briefing, long-horizon-prompting, multi-agent-patterns, project-development, self-improvement-loops, self-managed-context, tool-design (12) = 18</td><td>«Контекст» — это то, что я помню в одном разговоре. Скиллы учат: не терять важное в длинной сессии, сжимать, хранить в файлах, строить и проверять агентов. Помогают беречь лимит и не путаться в долгих делах.</td><td>25.10 · 🟢</td></tr>
+<tr><td>obra / superpowers</td><td>verification-before-completion, writing-plans, test-driven-development, systematic-debugging, receiving-code-review</td><td>Дисциплина программиста: сначала проверить, потом говорить «готово»; писать план; искать причину ошибки, а не латать симптом.</td><td>26.10 · 🟡 · только skills/, без hooks; убраны помощники, принуждение, ссылки на отсутствующее</td></tr>
+<tr><td>addyosmani / agent-skills</td><td>spec-driven-development, planning-and-task-breakdown, incremental-implementation, code-review-and-quality, shipping-and-launch</td><td>Сначала «что строим» (спецификация), потом тонкими кусочками, потом проверка и запуск.</td><td>26.10 · 🟡 · без hooks; коммит только по её просьбе, без второй модели-ревьюера</td></tr>
+<tr><td>NeoLabHQ / context-engineering-kit</td><td>kaizen, root-cause-tracing</td><td>Маленькие улучшения вместо переделки всего; проследить ошибку назад до первой причины.</td><td>26.10 · 🟡 · плагин kaizen, без reflexion</td></tr>
+<tr><td>OthmanAdi / planning-with-files</td><td>planning-with-files</td><td>План, находки и прогресс — в файлах (task_plan.md, findings.md, progress.md), а не в моей голове; после сжатия контекста не теряется.</td><td>26.10 · 🟡 · хуки из шапки вырезаны, scripts/ лежат, сами не запускаются</td></tr>
+<tr><td>virgiliojr94 / book-to-skill</td><td>book-to-skill</td><td>Превращает книгу/документ в скилл. Это тот метод, которым мы потом делали книжные скиллы.</td><td>26.10 · 🟡 · официальный по SECURITY-NOTICE, автор сверен; шаг публикации на GitHub вырезан</td></tr>
+<tr><td>kangarooking / cangjie-skill</td><td>cangjie-skill</td><td>Разбирает книгу, видео, курс на отдельные «атомарные» скиллы.</td><td>26.10 · 🟡 · без generate_star_history.py; «без субагентов, откат только с её да»</td></tr>
+<tr><td>Leonxlnx / taste-skill</td><td>design-taste-frontend</td><td>Чувство вкуса в дизайне страниц: подключается только если ты просишь улучшить дизайн.</td><td>26.10 · 🟡 · узкое описание, сначала каркас; скрипты только с её да; <b>звёзды подозрительно высоки</b></td></tr>
+<tr><td>Kulaxyz / self-learning-skills + aiwithremy / claude-skills-llm-council</td><td>self-learning, llm-council</td><td>self-learning — учиться на своих ошибках. llm-council — вопрос задаётся «совету из 5 советников»: другой взгляд на решение.</td><td>25.10 · 🟢 · наша правка: спрашивать перед созданием; совет только по фразе; помощники на Sonnet</td></tr>
+<tr><td>cloudflare / security-audit-skill</td><td>security-audit</td><td>Проверка кода и сервисов на дыры; режим «подсказки» также опора при проверке чужого.</td><td>25.10 · 🟢</td></tr>
+<tr><td>miolamio / cc-for-non-coders-dev-container</td><td>ru-editor, en-ru-translator-adv</td><td>Редактор русского текста («без ИИ-слога») и перевод EN→RU в три шага.</td><td>20.10 · 🟢</td></tr>
+</table></div>
+
+<h4>Б. Лежат в архиве — по темам (поднимаются по твоему слову)</h4>
+<div class="tw"><table>
+<tr><th>Источник (GitHub)</th><th>Сколько</th><th>Что внутри</th><th>Когда пригодится</th><th>Вердикт</th></tr>
+<tr><td>nowork-studio / notfair-plugin</td><td>38</td><td>ads-* (Google, Meta, TikTok, LinkedIn, X, Reddit, Amazon, ChatGPT) и seo-* (ключи, мета-теги, схема, ссылки, карта сайта, локальное SEO, WordPress…)</td><td>реклама и SEO сайта «Смарт Люкс»</td><td>20.10: 28 🟡, 10 🟢</td></tr>
+<tr><td>pavel-molyanov / molyanov-ai-dev</td><td>12</td><td>молянов-*: план, код, тесты, ревью, документация, безопасность, вёрстка, промпты, скиллы</td><td>когда пишем программу по методу Молянова</td><td>20.10 · 🟢</td></tr>
+<tr><td>phuryn / pm-skills</td><td>8</td><td>конкуренты, персонажи клиентов, ИЦП, цена, позиционирование, ценность, интервью</td><td>новый микропродукт, цена, позиционирование</td><td>20.10 · 🟢</td></tr>
+<tr><td>ai-evals-course / evals-skills</td><td>9</td><td>evals-start, eval-audit, error-discovery, generate-synthetic-data, write-code-eval, write-judge-prompt, validate-evaluator, evaluate-rag, build-review-interface</td><td>когда оцениваем ИИ-бота или агента</td><td>23.10 · 🟡</td></tr>
+<tr><td>planetscale / database-skills</td><td>4</td><td>mysql, postgres, vitess, neki</td><td>базы данных</td><td>20.10 · 🟢</td></tr>
+<tr><td>supabase / agent-skills</td><td>2</td><td>supabase, supabase-postgres-best-practices</td><td>база и бэкенд на Supabase</td><td>20.10 · 🟢</td></tr>
+<tr><td>MadsLorentzen / ai-job-search</td><td>3</td><td>job-application-assistant, job-scraper, upskill</td><td>поиск работы, отклики</td><td>20.10: 2 🟡, 1 🟢</td></tr>
+<tr><td>vakovalskii / nd-video-studio</td><td>2</td><td>nd-video, ndt-content</td><td>видео и контент</td><td>20.10 · 🟢</td></tr>
+<tr><td>nilbuild / video-demo</td><td>1</td><td>video-demo</td><td>демо-видео</td><td>20.10 · 🟡</td></tr>
+<tr><td>elsvv / yandex-direct-skill</td><td>1</td><td>yandex-direct</td><td>реклама в Яндекс Директе</td><td>20.10 · 🟡</td></tr>
+<tr><td>ilkruglov / designing-ai-infra-skill</td><td>1</td><td>designing-ai-infra</td><td>проектирование ИИ-инфраструктуры</td><td>20.10 · 🟢</td></tr>
+<tr><td>petergyang / fuck-cancer</td><td>1</td><td>fuck-cancer</td><td>личная тема (по описанию репозитория — не проверяла содержание)</td><td>20.10 · 🟡</td></tr>
+<tr><td>miolamio / cc-for-non-coders-dev-container</td><td>1</td><td>theme-factory</td><td>оформление тем</td><td>20.10 · 🟢</td></tr>
+</table></div>
+<p class="mut">Тема → архив: список с командами возврата — <code>~\.claude\skills-v-arhive\_SPISOK.md</code>. Магазин/Shopify/ARTMELLIO и 1688 (наши, не GitHub) тоже в архиве — это не чужое.</p>
+
+<h3>2.4. Стоят в работе, но записи о проверке в реестре <b>нет</b></h3>
+<div class="box">
+<p><code>last30days</code> (в его шапке: <code>github.com/mvanhorn/last30days-skill</code>, версия 3.28.1; ищет, что люди пишут по теме за 30 дней) — в карантине есть <code>gh-last30days-skill</code> и <code>last30days-skill</code>, но <b>запись о проверке не нашла</b>.</p>
+<p>Ещё без записи о происхождении: <code>no-ai-slop</code>, <code>research</code>, <code>watch</code>, <code>eli5</code>, <code>browser-skill</code>, <code>skill-clean</code>, <code>asd-ste100</code> — <b>не нашла</b>, откуда они (есть упоминания в памяти про no-ai-slop и asd-ste100, но источник там не указан). <code>asd-ste100-ru</code>: в карантине есть папка <code>asd-ste100-ru-skill</code>.</p>
+</div>
+
+<h3>2.5. Лежат в карантине, не установлены</h3>
+<p>Из GitHub-папок карантина (<code>gh-*</code>) в реестре установленного <b>нет</b>: gh-SkillOpt, gh-SkillSpector, gh-agent-skills, gh-awesome-claude-code-subagents, gh-awesome-claude-skills, gh-claude-code-memory-setup, gh-claude-code-workflows, gh-claude-hud, gh-dev-browser, gh-skills. Всего в карантине 55 папок (часть — не GitHub: голосовые модели, Happ и т.п.). Что с ними делать — решаешь ты.</p>
+
+<h3>2.6. Как GitHub-скиллы помогут вместе с книжными</h3>
+<div class="sheme">КНИГИ дают ЗНАНИЯ (что делать и почему)      GITHUB даёт ИНСТРУМЕНТЫ (как оформить и проверить)
+ huyen, gulli, lanham, koenigstein…   ─────►   context-*, evaluation, harness-engineering, tool-design
+ make-it-stick, peak, mind…           ─────►   book-to-skill, cangjie-skill (делать новые книжные скиллы)
+ claude-code-priemy (привычки)        ─────►   verification-before-completion, planning-with-files
+ dogovorennosti (деньги, клиенты)     ─────►   security-audit, pm-* (в архиве, если нужен продукт)</div>
+
+<h2 id="hv">Хвосты и что нужно от тебя</h2>
+<h3>Не сделано / слабые места (прямо)</h3>
+<ul>
+<li>Скиллы по книгам ИИ (шесть из таблицы А) проверены против <b>конспектов</b>, а конспекты писали открытые модели; с книгами сверены только 6 скиллов из таблицы Б.</li>
+<li>«Как применять с Витой» в книжных скиллах — пусто.</li>
+<li>Живой проверки скиллов на деле нет; повтор в новой вкладке не сделан.</li>
+<li>Строки после последнего исправления (третий круг) повторно не проверены; служебные строки и несколько мест (Peak 69, Mind 15/21, Storytelling 33, Minto 101) остались без сверки.</li>
+<li>«60% на интеграцию» (Loop Playbook) в тексте книги не найдено — в CLAUDE.md не вносили.</li>
+<li>Отложены по твоему слову: психология/НЛП/ОКР, английский (кроме скилла), тело, финансы; маркетинг/бренд/бизнес «позже». Moonwalking — пропущен по твоему слову.</li>
+<li>Опись 127 файлов: статус «разобрана» считался по совпадению названий — приблизительно (оговорка в REESTR_2510.md).</li>
+</ul>
+<h3>Что нужно от тебя (одной пачкой)</h3>
+<p>🟢 <b>Одна кнопка:</b> перезапусти вкладку — тогда увижу все скиллы, поставленные 26.10.<br>
+🟡 <b>Решить:</b> (1) запускать ли живую проверку в новой вкладке (10 сценариев, проверяльщик отдельно); (2) для восьми скиллов без записи — оформить проверку и внести в реестр или убрать; (3) что делать с 10 папками <code>gh-*</code> в карантине.<br>
+🔴 <b>Ничего необратимого</b> я не делала и не предлагаю.</p>
+
+<h3>Планировала / вышло / сделаю иначе</h3>
+<ul>
+<li><b>Планировала:</b> полный список «книга → скилл → где» и «GitHub → зачем».</li>
+<li><b>Вышло:</b> оба списка есть; в «книгах» у 7 черновиков числа проверки не нашла, у GitHub — 8 скиллов без записи происхождения.</li>
+<li><b>Сделаю иначе:</b> числа проверки для книжных скиллов впредь сразу вносить в REESTR_2510.md в одну таблицу.</li>
+</ul>
+<p class="mut">Источники: REESTR_2510.md, PLAN_tehnika_2510.md, INVENTAR_kupleno.md, spisok-knig-itog-20-10, retest-10-knig-23-10, sudi-gemini-opus-fresh-tests-24-10 (память), claude-code-priemy/references, pult/razresheniya/chuzhie.json и proverka_chuzhogo.md, .claude/chuzhie.json, skills-v-arhive/_SPISOK.md, skills-archive/last_sync.txt (90 скиллов, 1212 файлов, синхр. 26.10.2026 01:19).</p>
+</main>
+</body>
+</html>

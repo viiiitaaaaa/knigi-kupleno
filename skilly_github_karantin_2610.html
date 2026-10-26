@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Скиллы без записи и папки карантина</title>
+<style>
+:root{--bg:#fbf8f3;--fg:#2a2623;--mut:#6f665e;--card:#fff;--line:#e4dccf;--acc:#9a4d2e;--ok:#2f7d4f;--mid:#b07a14;--bad:#b23a3a}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1917;--fg:#ece6dd;--mut:#a39a8f;--card:#242120;--line:#3a3532;--acc:#e0916b;--ok:#6fc08b;--mid:#e0b050;--bad:#e27b7b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 Georgia,serif}
+main{max-width:1000px;margin:auto;padding:22px 16px 70px}h1{font-size:1.9rem}
+h2{font-size:1.45rem;color:var(--acc);border-bottom:2px solid var(--acc);margin-top:1.8em;padding-bottom:.2em}
+.mut{color:var(--mut)}.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font:15px/1.4 system-ui,Segoe UI,sans-serif;background:var(--card)}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}th{background:rgba(154,77,46,.12)}
+.ok{color:var(--ok);font-weight:600}.mid{color:var(--mid);font-weight:600}.bad{color:var(--bad);font-weight:600}
+.box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--acc);border-radius:8px;padding:10px 16px;margin:12px 0}
+code{font:14px Consolas,monospace;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px;word-break:break-all}
+</style>
+</head>
+<body><main>
+<h1>Скиллы без записи о происхождении и 10 папок карантина</h1>
+<p class="mut">26.10.2026 · отдельный отчёт · ничего не ставила, не удаляла, в самих скиллах ничего не меняла. Что не нашла — так и написано.</p>
+
+<h2>Часть 1. Откуда взяты 9 скиллов, про которые в реестре не было записи</h2>
+<div class="box"><b>На пальцах.</b> Реестр чужого (<code>pult\razresheniya\chuzhie.json</code>) — это «паспортный стол» для скиллов: откуда пришёл, когда, какой вердикт. У девяти скиллов паспорта не было. Я искала следы в самих файлах, в карантине, в памяти и в старых отчётах. Нашла адрес надёжно только у двух (<code>last30days</code>, <code>browser-skill</code>), частично у двух (<code>no-ai-slop</code>, <code>asd-ste100</code>), у остальных — «не нашла».</div>
+<div class="tw"><table>
+<tr><th>Скилл</th><th>Откуда взят</th><th>Чем доказано</th><th>Когда</th><th>Копия в карантине</th></tr>
+<tr><td><code>last30days</code></td><td class="ok">github.com/mvanhorn/last30days-skill</td><td>Поля <code>homepage</code> и <code>repository</code> в его SKILL.md, версия 3.28.1</td><td>20.10.2026 (дата файла)</td><td><code>karantin\last30days-skill</code> (20.10) и <code>karantin\gh-last30days-skill</code> (26.10)</td></tr>
+<tr><td><code>browser-skill</code></td><td class="ok">github.com/Tencent/BrowserSkill</td><td>Ссылки внутри его файлов <code>references</code> (4 упоминания)</td><td>29.09.2026 (дата файла)</td><td>не нашла</td></tr>
+<tr><td><code>no-ai-slop</code></td><td class="mid">автор petergyang, лицензия MIT; точный адрес репозитория — не нашла</td><td>Память <code>inspo-mcp.md</code>: «установлен 22.09 вручную (SKILL.md + eval.md)»</td><td>22.09.2026 (память); дата файла 10.10</td><td>не нашла</td></tr>
+<tr><td><code>asd-ste100</code></td><td class="mid">автор Dustin Yuchen Teng (LICENSE MIT 2026), версия 0.4.0. Имя совпадает с github.com/danyuchn/asd-ste100-skill — <b>не проверено</b></td><td>Файл LICENSE; память <code>hvosty-izucheniya-07-10.md</code>: «09.10 поставлены … asd-ste100»</td><td>09.10.2026</td><td>не нашла</td></tr>
+<tr><td><code>asd-ste100-ru</code></td><td class="bad">не нашла. В описании: ГОСТ Р 58049—2017, раздел 8.2. «Наш» или чужой — не доказано</td><td>—</td><td>20.10.2026 (дата файла)</td><td>есть <code>karantin\asd-ste100-ru-skill</code> (20.10) — связь с этим скиллом не проверена</td></tr>
+<tr><td><code>eli5</code></td><td class="bad">не нашла. В файле ссылок нет. В моём отчёте 25.10 он помечен «уже есть». На GitHub есть DreambigOu/ELI5, но совпадение <b>не проверено</b></td><td>—</td><td>20.10.2026 (дата файла)</td><td>не нашла</td></tr>
+<tr><td><code>research</code></td><td class="bad">не нашла (ссылок в файлах нет, в памяти упоминаний нет)</td><td>—</td><td>20.10.2026 (дата файла)</td><td>не нашла</td></tr>
+<tr><td><code>watch</code></td><td class="bad">не нашла. В шапке: MIT, версия 0.3.2; работает через yt-dlp, ffmpeg, Gemini/Whisper</td><td>—</td><td>20.10.2026 (дата файла)</td><td>не нашла</td></tr>
+<tr><td><code>skill-clean</code></td><td class="bad">не нашла. Внутри называется <code>skill-cleaner</code>, описание «Codex/OpenClaw skill audit»</td><td>—</td><td>20.10.2026 (дата файла)</td><td>не нашла</td></tr>
+</table></div>
+<div class="box"><b>Что внесено в реестр.</b> По каждому из девяти — запись с полями «откуда / когда / карантин» и вердиктом «не проверяла (записи о проверке нет)». Копия реестра до правки: <code>chuzhie.json.do-proishozhdeniya-2610</code>. Сами скиллы не менялись. Теперь в реестре 99 записей.</div>
+<p><b>Важное про даты:</b> «дата файла» — это когда файл лежит в <code>skills</code>, а не обязательно когда я его скачала. Дату установки точно знаю только у <code>no-ai-slop</code> (22.09) и <code>asd-ste100</code> (09.10) — из памяти.</p>
+<p><b>Что с этим делать:</b> пять скиллов без адреса (<code>research</code>, <code>watch</code>, <code>eli5</code>, <code>skill-clean</code>, <code>asd-ste100-ru</code>) — либо ты вспомнишь, откуда они, либо я их прочитаю целиком и проверю как чужие (без запуска), либо переписываю как наши. Решение за тобой.</p>
+
+<h2>Часть 2. Десять папок карантина <code>gh-*</code></h2>
+<div class="box"><b>На пальцах.</b> Карантин — это «прихожая»: сюда я скачала чужие репозитории, чтобы прочитать. Оттуда Claude ничего не загружает. Ниже про каждую папку: что это и нужно ли нам. Оценки «🟡» и «звёзды» — из моего отчёта <code>komputer\skilly_github_2510.html</code> от 25.10; все папки склонированы 26.10.2026. Часть кода я читала сканером и по заголовкам, не построчно.</div>
+<div class="tw"><table>
+<tr><th>Папка</th><th>Что это простыми словами</th><th>Нужно ли нам</th></tr>
+<tr><td><code>gh-SkillOpt</code><br><span class="mut">microsoft, ⭐18 671, 🟡</span></td><td>Исследовательская программа Microsoft: «тренирует» скиллы агента как нейросеть — по прошлым сессиям сама улучшает инструкции. Плагин ставит хук конца сессии и cron, читает историю сессий и обращается к внешним моделям с ключами.</td><td><span class="mid">Может быть (только идея).</span> Ставить нельзя (хук, cron, чтение истории, ключи). Идею «улучшать скиллы по прошлым ошибкам» можем сделать по-своему — как свой скрипт.</td></tr>
+<tr><td><code>gh-SkillSpector</code><br><span class="mut">NVIDIA, ⭐21 591, 🟡</span></td><td>Сканер безопасности чужих скиллов: ищет 71 шаблон опасного (внедрение команд, утечка данных, подмена в цепочке поставок) до установки. По README: в 26% проверенных скиллов нашлись уязвимости.</td><td><span class="ok">Да — как образец</span> для программы защиты (вторник). Ставить не надо: нужен пакет Python и ключ API, а проверяемый текст уходит модели. Список шаблонов опасного возьмём в наш <code>skan_karantin.py</code>.</td></tr>
+<tr><td><code>gh-agent-skills</code><br><span class="mut">addyosmani, ⭐110 469, 🟡</span></td><td>Набор инженерных скиллов: спецификация → план → сборка → проверка → ревью → выпуск. Хуки в нём есть (кэш, старт сессии).</td><td><span class="ok">Уже взяли</span> 5 скиллов оттуда (<code>spec-driven-development</code>, <code>planning-and-task-breakdown</code>, <code>incremental-implementation</code>, <code>code-review-and-quality</code>, <code>shipping-and-launch</code>), хуки не ставили. Остальное — по надобности.</td></tr>
+<tr><td><code>gh-awesome-claude-code-subagents</code><br><span class="mut">VoltAgent, ⭐26 045, 🟡</span></td><td>Подборка 161+ готовых «помощников-ролей» (текстовые файлы) по 10 направлениям; ставятся скриптом.</td><td><span class="mid">Может быть.</span> Как образцы для наших агентов (например, как у <code>proverka</code>). Пачкой не ставить: каждый помощник — это лишние слова в списке и лимит.</td></tr>
+<tr><td><code>gh-awesome-claude-skills</code><br><span class="mut">ComposioHQ, ⭐77 926, 🟡</span></td><td>Огромный каталог скиллов (документы, MCP-сборщик, проверка сайтов, организация файлов, счета…), часть ведёт на платный сервис Composio, где подключаются чужие аккаунты.</td><td><span class="mid">Может быть, по одному.</span> Как каталог идей. Часть с Composio — нет (внешние аккаунты, деньги). В отчёте 26.10 помечено 🔴 — Composio-часть.</td></tr>
+<tr><td><code>gh-claude-code-memory-setup</code><br><span class="mut">lucasrosati, ⭐1 041, 🟡</span></td><td>Руководство: память Claude Code через Obsidian-заметки + граф кода Graphify + хук автосохранения. Скрипты правят <code>settings.json</code>, ставятся в cron, часть удаляет файлы. Громкие обещания (экономия «в 71 раз») сам автор признал не подтверждёнными.</td><td><span class="bad">Нет.</span> У нас своя память (папки <code>memory</code>), а Obsidian — вторая память, дублирует. Не ставим.</td></tr>
+<tr><td><code>gh-claude-code-workflows</code><br><span class="mut">OneRedOak, ⭐3 908, 🟡</span></td><td>Готовые схемы ревью: код, безопасность, дизайн (через браузер), плюс PDF-руководство. Часть запускает агента в GitHub Actions с секретом.</td><td><span class="mid">Может быть (только тексты).</span> У нас уже есть <code>/code-review</code>, <code>/security-review</code> и агент <code>design-review</code>. Брать идеи формулировок, не схемы с секретами.</td></tr>
+<tr><td><code>gh-claude-hud</code><br><span class="mut">jarrodwatts, ⭐28 870, 🟡</span></td><td>Панель под полем ввода: расход контекста, лимиты, активные помощники, прогресс задач. Меняет <code>settings.json</code>, читает данные входа, запускает собранный JS.</td><td><span class="bad">Нет</span> (твоё слово 26.10: «оставить свою строку состояния»). Идею «видеть контекст и лимит» можно добавить в свою строку состояния нашим кодом.</td></tr>
+<tr><td><code>gh-dev-browser</code><br><span class="mut">SawyerHood, ⭐6 697, 🔴</span></td><td>Агент управляет Chrome короткими JS-скриптами; при установке скачивает готовый бинарник.</td><td><span class="bad">Нет.</span> 🔴: скачивает бинарник, на Windows пока не поддерживается; у нас уже есть расширение Claude in Chrome и playwright.</td></tr>
+<tr><td><code>gh-skills</code><br><span class="mut">vercel-labs, ⭐36 522, 🟡</span></td><td>Программа <code>npx skills</code>: ищет и ставит скиллы для 80+ агентов; каталог skills.sh.</td><td><span class="bad">Нет как установщик</span> — он сам кладёт чужие скиллы в папки и обходит наш карантин. <span class="ok">Каталог skills.sh</span> можно смотреть глазами.</td></tr>
+</table></div>
+<p class="mut">Итого: «да» — 1 (как образец), «может быть» — 4, «нет» — 4, «уже взяли часть» — 1. Ничего не ставила и не удаляла; решать тебе, что убрать из карантина.</p>
+
+<h2>Что я не проверила</h2>
+<ul>
+<li>Оценки безопасности в части 2 — из отчёта 25.10, где помощники читали описание, список файлов и выборочно скрипты, а не весь код (в нём это прямо сказано).</li>
+<li>Для пяти скиллов без адреса (часть 1) источник не найден: перебор GitHub по названию мог бы дать совпадения, но я не доказываю совпадение по одному имени.</li>
+</ul>
+<p class="mut">Источники: файлы скиллов в <code>~\.claude\skills</code>, <code>pult\razresheniya\chuzhie.json</code>, память папок (<code>inspo-mcp.md</code>, <code>hvosty-izucheniya-07-10.md</code>, <code>github-skilly-ustanovleno-2610.md</code>), <code>komputer\skilly_github_2510.html</code>, README в <code>~\.claude\karantin\gh-*</code>.</p>
+</main></body></html>
