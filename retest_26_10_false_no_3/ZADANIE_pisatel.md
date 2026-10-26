@@ -1,0 +1,7 @@
+# Task for WRITER (Sonnet). Files in Russian; this brief in English.
+Goal: write 6 NEW test situations (3 per book) that trap a FALSE "the book has nothing on this" answer: the book DOES cover the topic, but in a less obvious chapter/anecdote/synonym (past failure: answerer grepped "plagiar/steal" while the book section was titled "Theft and Infringement" — use synonym/heading traps). Do NOT put "в книге такого нет" into Vita's own message (it primes the answerer); a neutral messy message only.
+Books, in C:\Users\User\knigi_kupleno\txt13\ (line numbers = lines of the txt): a = obviously_awesome.txt, i = co_intelligence.txt.
+Format sample: C:\Users\User\knigi_kupleno\retest_26_10_false_no\w\vhod.md and klyuch.md (read them). Voice: Vita (A2 English, sells bots/consulting, uses AI daily, talks to Russians/Chinese/Americans), messy first-person message.
+Do not reuse topics of C:\Users\User\.claude\skills\dogovorennosti\references\karty\obviously_awesome\01_situacii.md or the skill C:\Users\User\.claude\skills\mollick-co-intelligence\SKILL.md examples (skim headings only).
+Output, per code, folder C:\Users\User\knigi_kupleno\retest_26_10_false_no_3\<a|i>\ : vhod.md (G-1..G-3, message only) and klyuch.md (MESSAGE, CORRECT TECHNIQUE with book line numbers verified by sed/grep, NOT IN BOOK, TRAP: where it hides and which synonym words to grep, TYPICAL WRONG ANSWER). Every cited line must be read, not inferred.
+Touch nothing outside that folder. Max 50 tool steps; stuck = stop and report. Final reply in Russian: 6 one-line situations + "verified N of 6".

@@ -1,0 +1,4 @@
+# Task for JUDGE (Sonnet). Brief in English; write in Russian.
+Judge 9 answers. Per folder C:\Users\User\knigi_kupleno\retest_26_10_false_no_2\<c|s|o>\ : vhod.md, klyuch.md (truth), otvety.md. Format of verdicts: first 12 lines of C:\Users\User\knigi_kupleno\retest_26_10_false_no\w\sud.md.
+PASS/FAIL per G with reason citing otvety line and book line. Re-verify every disputed citation yourself with sed/grep on C:\Users\User\knigi_kupleno\txt13\<book>.txt (do not trust the key blindly). Column "ложное нет": yes/no — did the answer wrongly say the book has nothing on something it covers? Flag invented quotes.
+Output: sud.md per folder + C:\Users\User\knigi_kupleno\retest_26_10_false_no_2\SVODKA.md (9 rows: book, G, PASS/FAIL, ложное нет, one line; totals X of 9, ложных «нет» N). Max 60 steps. Final reply in Russian: totals and FAIL lines.

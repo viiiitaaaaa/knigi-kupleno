@@ -1,0 +1,7 @@
+# Task for WRITER (Sonnet). Files in Russian; this brief in English.
+Goal: write 9 NEW test situations (3 per book) that trap a FALSE "the book has nothing on this" answer: the book DOES cover the topic, but in a less obvious chapter/anecdote/synonym (hint: the last test failed because the answerer grepped "plagiar/steal" while the book section is titled "Theft and Infringement" — use such synonym traps).
+Books, in C:\Users\User\knigi_kupleno\txt13\ (line numbers = lines of the txt): c = challenger_sale.txt, s = spin_fieldbook.txt, o = prodazhi_b2b_kolotilov.txt (Russian text).
+Format sample: C:\Users\User\knigi_kupleno\retest_26_10_false_no\w\vhod.md and klyuch.md (read them). Voice: Vita (A2 English, sells bots/consulting, talks to Russians/Chinese/Americans), messy first-person message.
+Do not reuse topics of C:\Users\User\.claude\skills\dogovorennosti\references\karty\<challenger_sale|spin|kolotilov>\01_situacii.md (skim headings only).
+Output, per code, folder C:\Users\User\knigi_kupleno\retest_26_10_false_no_2\<c|s|o>\ : vhod.md (G-1..G-3, message only) and klyuch.md (MESSAGE, CORRECT TECHNIQUE with book line numbers verified by sed/grep, NOT IN BOOK, TRAP: where it hides and which synonym words to grep, TYPICAL WRONG ANSWER). Every cited line must be read, not inferred.
+Touch nothing outside that folder. Max 60 tool steps; stuck = stop and report. Final reply in Russian: 9 one-line situations + "verified N of 9".
